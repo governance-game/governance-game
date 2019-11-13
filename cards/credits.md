@@ -1,0 +1,17 @@
+---
+type: Rules
+---
+
+# Credits
+
+Illustrations from the noun project under Creative Commons Attribution 3.0:
+
+Government (also modified), Team Strategy (also modified), financial strategy (modified), Candidate, medical care, political, government building, government conference by Made x Made
+Mechanic, secretary, Judge, steelworker, operator, mover by Grégory Montigny
+hosting connections, server technical, web coding by Aman, MY
+testing, developer by mynamepong
+laptop, monitor bug by Shastry, IN
+EU personal data protection by Somewan
+Cowboy by Eucalyp
+
+Links in github.com/publiccode/governance-game/CREDITS.md
