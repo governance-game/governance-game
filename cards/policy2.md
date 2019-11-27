@@ -4,4 +4,4 @@ image: noun_political_2003975.svg
 number: 3
 ---
 
-# Policy 2
+# Policy public organization 2
