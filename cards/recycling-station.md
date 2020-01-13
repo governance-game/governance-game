@@ -1,0 +1,5 @@
+---
+type: Scenario
+---
+
+You and another municipality have developed an open source recycling station management system. You use it to plan where to put stations of different types as well as when to empty them. You have had it in use for four years. The main end users of the system are the **civil servants** but **citizens** also use one aspect of it to find them (add both actor cards). Both Public organizations 1 and 2 are Commissioning.
