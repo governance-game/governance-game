@@ -17,7 +17,7 @@ We love when people want to help and improve the game. Please read [CONTRIBUTING
 
 ## Roadmap
 
-1. Finalize first design with Noun project icons and do a print.
+1. Finalize first design with Noun project icons and do a print. (done)
 2. Test the game with real users and collect feedback.
 3. Iterate on the cards and rules. Create custom icons/imagery?
 4. Do a second small scale print run.
@@ -25,7 +25,7 @@ We love when people want to help and improve the game. Please read [CONTRIBUTING
 
 ## Versioning
 
-We use [Semantic Versioning](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/publiccode/govgame/tags).
+We use [Semantic Versioning](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/publiccode/govgame/tags) and [change log](CHANGELOG.md).
 
 ## Authors
 
