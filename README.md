@@ -25,7 +25,7 @@ We love when people want to help and improve the game. Please read [CONTRIBUTING
 
 ## Versioning
 
-We use [Semantic Versioning](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/publiccode/govgame/tags) and [change log](CHANGELOG.md).
+We use [Semantic Versioning](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/publiccode/govgame/tags) (and [change log](CHANGELOG.md)).
 
 ## Authors
 
