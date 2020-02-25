@@ -17,7 +17,7 @@ We love when people want to help and improve the game. Please read [CONTRIBUTING
 
 ## Roadmap
 
-1. Finalize first design with Noun project icons and do a print. (done)
+1. Finalize first design with Noun project icons and do a print. :heavy_check_mark:
 2. Test the game with real users and collect feedback.
 3. Iterate on the cards and rules. Create custom icons/imagery?
 4. Do a second small scale print run.
