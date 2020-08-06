@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: noun_Government_1989687.svg
+image: noun-government-1989687
 ---
 
 # Governance body

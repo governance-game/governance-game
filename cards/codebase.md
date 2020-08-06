@@ -1,6 +1,6 @@
 ---
 type: Object
-image: noun_web coding_1734983.svg
+image: noun-web-coding-1734983
 number: 1
 ---
 

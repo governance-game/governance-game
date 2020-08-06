@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: noun_Candidate_2003972.svg
+image: noun-candidate-2003972
 ---
 
 # Citizen

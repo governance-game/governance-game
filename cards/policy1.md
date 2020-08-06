@@ -1,6 +1,6 @@
 ---
 type: Object
-image: noun_political_2003975.svg
+image: noun-political-2003975
 number: 2
 ---
 

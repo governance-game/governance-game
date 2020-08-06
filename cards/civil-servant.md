@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: noun_Judge_1974854.svg
+image: noun-judge-1974854
 ---
 
 # Civil servant

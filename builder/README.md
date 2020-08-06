@@ -9,3 +9,11 @@ This folder contains a script which automatically generates a complete card deck
 # #
 
 ## TEX Templates
+
+TODO:
+
+- use correct font
+- remove TOC styling in latex
+- create different styling per type of card
+- style
+- add back cover to frontmatter to generate back of the cards

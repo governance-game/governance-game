@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: noun_government building_2031469.svg
+image: noun-government-building-2031469
 ---
 
 # Replicating public organization

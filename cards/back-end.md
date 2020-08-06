@@ -1,6 +1,6 @@
 ---
 type: Object
-image: noun_server technical_1735015.svg
+image: noun-server-technical-1735015
 number: 4
 ---
 

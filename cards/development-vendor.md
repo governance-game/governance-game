@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: noun_Mechanic_1974846.svg
+image: noun-Mechanic-1974846
 ---
 
 # Development vendor

@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: noun_Team Strategy_2023240.svg
+image: noun-team-strategy-2023240
 ---
 
 # Technical steering group

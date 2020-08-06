@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: noun_Government_1984944.svg
+image: noun-government-1984944
 ---
 
 # Commissioning public organization

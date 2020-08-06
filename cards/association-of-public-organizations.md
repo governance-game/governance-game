@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: association.svg
+image: associations
 ---
 
 # Association of public organizations

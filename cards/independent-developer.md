@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: noun_developer_2209170.svg
+image: noun-developer-2209170
 ---
 
 # Independent developer

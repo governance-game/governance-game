@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: noun_operator_1974933.svg
+image: noun-operator-1974933
 ---
 
 # Support vendor

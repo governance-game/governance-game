@@ -1,6 +1,6 @@
 ---
 type: Object
-image: noun_Laptop_2607397.svg
+image: noun-laptop-2607397
 number: 5
 ---
 

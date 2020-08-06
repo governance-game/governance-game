@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: noun_secretary_1974852.svg
+image: noun-secretary-1974852
 ---
 
 # Inhouse developer

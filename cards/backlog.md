@@ -1,6 +1,6 @@
 ---
 type: Object
-image: noun_testing_2209188.svg
+image: noun-testing-2209188
 number: 6
 ---
 

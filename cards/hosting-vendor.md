@@ -1,6 +1,6 @@
 ---
 type: Actor
-image: noun_mover_1974883.svg
+image: noun-mover-1974883
 ---
 
 # Hosting vendor
