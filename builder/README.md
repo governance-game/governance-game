@@ -1,0 +1,11 @@
+# Governance Game card deck generator
+
+This folder contains a script which automatically generates a complete card deck for the Governance Game in PDF. you can use the PDF to print the cards yourself and cut them. Alternatively the PDF is compatible with external printer companies which can print this deck on a real physical deck of cards.
+
+## Usage
+
+## Front-end YAML block variables
+
+# #
+
+## TEX Templates
