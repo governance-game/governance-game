@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="rules-back.svg"
+   inkscape:version="1.0 (1.0+r73+1)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 69.099998 94"
+   height="94mm"
+   width="69.099998mm">
+  <defs
+     id="defs2">
+    <clipPath
+       id="clip0">
+      <rect
+         y="0"
+         x="0"
+         id="rect9454"
+         fill="#ffffff"
+         height="842"
+         width="595" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="27"
+     inkscape:window-x="67"
+     inkscape:window-height="1097"
+     inkscape:window-width="1981"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="269.12935"
+     inkscape:cx="-40.787419"
+     inkscape:zoom="0.7"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       transform="matrix(0.03375634,0,0,0.03375634,19.325384,29.420206)"
+       id="g7134"
+       style="fill:none">
+      <g
+         id="mark">
+        <path
+           id="Polygon"
+           d="M 451.015,0 902.03,260.394 V 781.181 L 451.015,1041.57 0,781.181 V 260.394 Z"
+           fill="#ffffff" />
+        <g
+           id="Union">
+          <path
+             d="m 757.013,781.321 73,-42.206 V 427 l -73,42.206 z"
+             fill="#000000"
+             id="path7109" />
+          <path
+             d="m 703.013,812.543 -72,41.628 V 542.056 l 72,-41.628 z"
+             fill="#000000"
+             id="path7111" />
+          <path
+             d="M 505.013,927.021 V 614.905 l 72,-41.628 v 312.116 z"
+             fill="#000000"
+             id="path7113" />
+          <path
+             fill-rule="evenodd"
+             clip-rule="evenodd"
+             d="M 451.015,0 902.03,260.394 V 781.181 L 451.015,1041.57 0,781.181 V 260.394 Z m -0.002,21 433.012,250 H 675.59 L 451.013,521 18.0001,271 Z M 18,333 18.0001,771 451.013,1021 884.025,771 V 333 L 451.013,583 Z"
+             fill="#000000"
+             id="path7115" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     style="display:none"
+     inkscape:label="guides"
+     id="layer2"
+     inkscape:groupmode="layer">
+    <rect
+       y="6.0999985"
+       x="6.0999985"
+       height="81.800003"
+       width="56.900002"
+       id="rect5074"
+       style="fill:none;stroke:#ff0000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round" />
+  </g>
+</svg>
