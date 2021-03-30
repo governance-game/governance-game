@@ -1,11 +1,13 @@
 # Governance Game
 
-![A picture of the cards in the game on a table](images/cards-640px.jpg)
+[![Introduction video to the game](images/video-preview.jpg)](https://www.youtube.com/watch?v=Dt0WFla4eeM)
 
 This is an interactive game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html). Use this as a way to get a conversation and reflection about governance started. We aim to use it during [early incubation of a codebase](https://about.publiccode.net/activities/codebase-stewardship/product-assets-for-early-incubation.html), or perhaps even earlier. You can of course play the game totally without our involvement, it is probably useful for any constellation that have a codebase to govern.
 
 ## Playing the game
 You need a few people to play with you. There are no strict number, but you all need to be able to see and reach the cards on the table. For the actual rules, see the rules cards.
+
+![A picture of the cards in the game on a table](images/cards-640px.jpg)
 
 ## Print your own version
 
