@@ -23,7 +23,7 @@ echo "Building cards..."
 
 for filename in ../cards/*.md; do
   echo  Building card: outputdeck/"$(basename "$filename" .md)".pdf
-  pandoc --from=markdown+yaml_metadata_block --template card.tex -o outputdeck/"$(basename "$filename" .md)".pdf -V monofont="DejaVu Sans Mono" --pdf-engine=xelatex $filename
+  pandoc --from=markdown+yaml_metadata_block --template card-front.tex -o outputdeck/"$(basename "$filename" .md)".pdf -V monofont="DejaVu Sans Mono" --pdf-engine=xelatex $filename
 done
 #  pandoc --from=markdown+yaml_metadata_block --template card.tex -o outputdeck/bug.pdf --pdf-engine=xelatex ../cards/bug.md
 #  -V mainfont="DejaVu Serif" \
