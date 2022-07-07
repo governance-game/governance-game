@@ -5,7 +5,8 @@ This folder contains a script which automatically generates a complete card deck
 ## Dependencies
 
 ```
-sudo apt install docbook-utils pandoc inkscape
+sudo apt install docbook-utils pandoc inkscape texlive texlive-fonts-extra
+# sudo apt install texlive-full
 ```
 
 ## Usage
