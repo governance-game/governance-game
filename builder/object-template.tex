@@ -1,0 +1,27 @@
+
+\documentclass{article}
+\usepackage[paperheight=9.4cm,
+	paperwidth=6.3cm,
+	headheight=0cm,
+	margin=0.5cm,
+	%top=0.25cm,
+	%tmargin=0.25cm
+]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{etoolbox,lineno}% http://ctan.org/pkg/{etoolbox,lineno}
+\usepackage{float}
+\usepackage{svg}
+
+\begin{document}
+\pagenumbering{gobble} % turn off pagenumbers
+\begin{flushleft}\cardnumber\end{flushleft}
+\begin{flushright}\cardtype\end{flushright}
+\section*{}% the '*' removes section numbers
+\begin{figure}[H]
+	\centering
+	\def\width{2cm}
+	\def\height{2cm}
+	\includesvg{\cardpicture}
+\end{figure}
+\centerline{\textbf{\cardname}}
+\end{document}
