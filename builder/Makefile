@@ -60,10 +60,20 @@ SCENARIO_CARD_NAMES=\
  recycling-station \
  wifi
 
+START_CARD_NAMES=\
+ starting-state-1 \
+ starting-state-2 \
+ starting-state-3 \
+ starting-state-4 \
+ starting-state-5 \
+ starting-state-6 \
+ starting-state-7 \
+ starting-state-8
 
 ALL_CARD_NAMES=\
  $(RULES_CARD_NAMES) \
  $(SCENARIO_CARD_NAMES) \
+ $(START_CARD_NAMES) \
  $(CALAMITY_CARD_NAMES) \
  $(ACTOR_CARD_NAMES) \
  $(OBJECT_CARD_NAMES)
@@ -75,7 +85,7 @@ view-all: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
 
 # note: cards only reference one of the templates
 %.pdf: ../cards/%.tex calamity-template.tex actor-template.tex \
-		rules-template.tex scenario-template.tex
+		rules-template.tex scenario-template.tex start-template.tex
 	$(PDFLATEX) $<
 
 view-%: %.pdf
