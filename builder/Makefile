@@ -12,7 +12,7 @@
 PDFVIEW=evince
 PDFLATEX=pdflatex -synctex=1 -interaction=nonstopmode --shell-escape
 
-all: calamity-pdfs
+all: pdfs
 
 CALAMITY_CARD_NAMES= \
  bug \
@@ -23,12 +23,29 @@ CALAMITY_CARD_NAMES= \
  new-replicator \
  wild-developer
 
-calamity-pdfs: $(patsubst %, %.pdf, $(CALAMITY_CARD_NAMES))
+ACTOR_CARD_NAMES= \
+ association-of-public-organizations \
+ citizen \
+ civil-servant \
+ commissioning-public-organization \
+ development-vendor \
+ governance-body \
+ hosting-vendor \
+ independent-developer \
+ inhouse-developer \
+ replicating-public-organization \
+ support-vendor \
+ technical-steering-group
 
-view-all: $(patsubst %, %.pdf, $(CALAMITY_CARD_NAMES))
+ALL_CARD_NAMES=$(CALAMITY_CARD_NAMES) $(ACTOR_CARD_NAMES)
+
+pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
+
+view-all: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
 	$(PDFVIEW) $^
 
-%.pdf: ../cards/%.tex calamity-template.tex
+# note: cards only reference one of the templates
+%.pdf: ../cards/%.tex calamity-template.tex actor-template.tex
 	$(PDFLATEX) $<
 
 view-%: %.pdf
