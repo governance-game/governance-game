@@ -80,8 +80,27 @@ ALL_CARD_NAMES=\
 
 pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
 
+view-rules: $(patsubst %, %.pdf, $(RULES_CARD_NAMES))
+	$(PDFVIEW) $^
+
+view-scenarios: $(patsubst %, %.pdf, $(SCENARIO_CARD_NAMES))
+	$(PDFVIEW) $^
+
+view-starts: $(patsubst %, %.pdf, $(START_CARD_NAMES))
+	$(PDFVIEW) $^
+
+view-calamaties: $(patsubst %, %.pdf, $(CALAMITY_CARD_NAMES))
+	$(PDFVIEW) $^
+
+view-actors: $(patsubst %, %.pdf, $(ACTOR_CARD_NAMES))
+	$(PDFVIEW) $^
+
+view-objects: $(patsubst %, %.pdf, $(OBJECT_CARD_NAMES))
+	$(PDFVIEW) $^
+
 view-all: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
 	$(PDFVIEW) $^
+
 
 # note: cards only reference one of the templates
 %.pdf: ../cards/%.tex calamity-template.tex actor-template.tex \
