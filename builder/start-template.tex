@@ -1,7 +1,11 @@
-
+%
 \documentclass{article}
-\usepackage[paperheight=9.4cm,
-	paperwidth=6.3cm,
+\usepackage[
+        % landscape,
+	% paperheight=9.4cm,
+	% paperwidth=6.3cm,
+	paperwidth=9.4cm,
+	paperheight=6.3cm,
 	headheight=0cm,
 	margin=0.5cm,
 	%top=0.25cm,
@@ -12,20 +16,28 @@
 \usepackage{float}
 \usepackage{svg}
 \usepackage{ifthen}
+\usepackage{fancybox}
+
+%\usepackage{showframe}
+%\renewcommand*\ShowFrameColor{\color{red}}
 
 \begin{document}
+%\begin{landscape}
 \pagenumbering{gobble} % turn off pagenumbers
+\hyphenchar\font=-1 % turn off end-of-line word hyphenation
 \centerline{\textbf{Starting state}}
-\section*{}
-\ifthenelse{\isundefined{\upperleft}}{}{\upperleft}
-\ifthenelse{\isundefined{\uppercenter}}{}{\uppercenter}
-\ifthenelse{\isundefined{\upperright}}{}{\upperright}
-
-\ifthenelse{\isundefined{\middleleft}}{}{\middleleft}
-\ifthenelse{\isundefined{\middlecenter}}{}{\middlecenter}
-\ifthenelse{\isundefined{\middleright}}{}{\middleright}
-
-\ifthenelse{\isundefined{\lowerleft}}{}{\lowerleft}
-\ifthenelse{\isundefined{\lowercenter}}{}{\lowercenter}
-\ifthenelse{\isundefined{\lowerright}}{}{\lowerright}
+\ovalbox{
+\begin{tabular}{p{0.2\linewidth} p{0.2\linewidth} p{0.2\linewidth}}
+\ifthenelse{\isundefined{\upperleft}}{}{\upperleft} &
+\ifthenelse{\isundefined{\uppercenter}}{}{\centering\uppercenter} &
+\ifthenelse{\isundefined{\upperright}}{}{\begin{flushright}\upperright\end{flushright}} \\
+\ifthenelse{\isundefined{\middleleft}}{}{\middleleft} &
+\ifthenelse{\isundefined{\middlecenter}}{}{\centering\middlecenter} &
+\ifthenelse{\isundefined{\middleright}}{}{\begin{flushright}\middleright\end{flushright}} \\
+\ifthenelse{\isundefined{\lowerleft}}{}{\lowerleft} &
+\ifthenelse{\isundefined{\lowercenter}}{}{\centering\lowercenter} &
+\ifthenelse{\isundefined{\lowerright}}{}{\begin{flushright}\lowerright\end{flushright}} \\
+\end{tabular}
+}
+%\end{landscape}
 \end{document}
