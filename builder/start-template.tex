@@ -21,13 +21,15 @@
 %\usepackage{showframe}
 %\renewcommand*\ShowFrameColor{\color{red}}
 
+\input{template-font}
+\setlength\parindent{0pt} % we do not want to repeat \noindent everwhere
 \begin{document}
 %\begin{landscape}
 \pagenumbering{gobble} % turn off pagenumbers
 \hyphenchar\font=-1 % turn off end-of-line word hyphenation
 \centerline{\textbf{Starting state}}
 \ovalbox{
-\begin{tabular}{p{0.2\linewidth} p{0.2\linewidth} p{0.2\linewidth}}
+\begin{tabular}{p{0.25\linewidth} p{0.25\linewidth} p{0.25\linewidth}}
 \ifthenelse{\isundefined{\upperleft}}{}{\upperleft} &
 \ifthenelse{\isundefined{\uppercenter}}{}{\centering\uppercenter} &
 \ifthenelse{\isundefined{\upperright}}{}{\begin{flushright}\upperright\end{flushright}} \\
