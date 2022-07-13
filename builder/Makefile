@@ -78,7 +78,8 @@ ALL_CARD_NAMES=\
  $(ACTOR_CARD_NAMES) \
  $(OBJECT_CARD_NAMES)
 
-pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
+pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES)) \
+		$(patsubst %, rotated-%.pdf, $(START_CARD_NAMES))
 
 view-rules: $(patsubst %, %.pdf, $(RULES_CARD_NAMES))
 	$(PDFVIEW) $^
@@ -86,7 +87,8 @@ view-rules: $(patsubst %, %.pdf, $(RULES_CARD_NAMES))
 view-scenarios: $(patsubst %, %.pdf, $(SCENARIO_CARD_NAMES))
 	$(PDFVIEW) $^
 
-view-starts: $(patsubst %, %.pdf, $(START_CARD_NAMES))
+view-starts: $(patsubst %, %.pdf, $(START_CARD_NAMES)) \
+		$(patsubst %, rotated-%.pdf, $(START_CARD_NAMES))
 	$(PDFVIEW) $^
 
 view-calamaties: $(patsubst %, %.pdf, $(CALAMITY_CARD_NAMES))
@@ -106,6 +108,9 @@ view-all: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
 %.pdf: ../cards/%.tex calamity-template.tex actor-template.tex \
 		rules-template.tex scenario-template.tex start-template.tex
 	$(PDFLATEX) $<
+
+rotated-%.pdf: $(patsubst %, %.pdf, $(START_CARD_NAMES))
+	pdfjam --angle 90 $< --outfile $@
 
 view-%: %.pdf
 	$(PDFVIEW) $<
