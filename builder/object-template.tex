@@ -3,31 +3,27 @@
 \usepackage[paperheight=9.4cm,
 	paperwidth=6.3cm,
 	textwidth=5.4cm,
-	textheight=5.5cm,
-	footskip=1.5cm
+	textheight=5.5cm
 ]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{etoolbox,lineno}% http://ctan.org/pkg/{etoolbox,lineno}
-\usepackage{float}
-\usepackage{svg}
-\usepackage{fancyhdr}
-\usepackage{layout}
+\usepackage{float} % Needed for placement of image
+\usepackage{svg} % Needed to insert an svg image
+\usepackage{fancyhdr} % Used to justify the header and the footer
 
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
+% This section sets up and creates a header and a footer
+\pagestyle{fancy} % Declares that we are using our own pagestyle using fancy
+\fancyhf{} % Adds both a header and a footer 
+\renewcommand{\headrulewidth}{0pt} % Completely removes the line from the header
 \rhead{{\small\cardtype}}
 \lhead{{\small\cardnumber}}
 \cfoot{\textbf{\Large{\cardname}}}
 
 \input{template-font}
-\setlength\parindent{0pt} % we do not want to repeat \noindent everwhere
 \begin{document}
-\pagenumbering{gobble} % turn off pagenumbers
-\section*{}% the '*' removes section numbers
 \begin{figure}[H]
 	\centering
-	\def\svgwidth{\columnwidth}
-	\scalebox{0.8}{\includesvg{\cardpicture}}
+	\def\svgwidth{\columnwidth} % Normalizes the size of the SVG to the column width so that the size in the source doesn't matter
+	\scalebox{0.9}{\includesvg{\cardpicture}}
 \end{figure}
 \end{document}

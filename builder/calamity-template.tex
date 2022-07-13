@@ -4,36 +4,37 @@
 	paperwidth=6.3cm,
 	textwidth=5.4cm,
 	textheight=7.5cm,
-	headsep=0cm
+	headsep=0cm % Makes separation to header small so that it fits on this small page.
 ]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{etoolbox,lineno}% http://ctan.org/pkg/{etoolbox,lineno}
-\usepackage{float}
-\usepackage{svg}
-\usepackage{fancyhdr}
-\usepackage{layout}
+\usepackage{float} % Needed for placement of image
+\usepackage{svg} % Needed to insert an svg image
+\usepackage{fancyhdr} % Used to justify the header and the footer
 
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
+% This section sets up and creates a header and a footer
+\pagestyle{fancy} % Declares that we are using our own pagestyle using fancy
+\fancyhead{} % Adds a header 
+\renewcommand{\headrulewidth}{0pt} % Completely removes the line from the header
 \rhead{{\small\cardtype}}
 
 \input{template-font}
 \setlength\parindent{0pt} % we do not want to repeat \noindent everwhere
+% The following three lines are used to avoid hyphenated words and not flow outside the margins
 \emergencystretch=\maxdimen
 \hyphenpenalty=10000
 \hbadness=10000
 \begin{document}
 \pagenumbering{gobble} % turn off pagenumbers
-\section*{}% the '*' removes section numbers
+\section*{} % the '*' removes section numbers
 \begin{figure}[H]
 	\centering
-	\def\svgwidth{\columnwidth}
-	\scalebox{0.3}{\includesvg{\cardpicture}}
+	\def\svgwidth{\columnwidth} % Normalizes the size of the SVG to the column width so that the size in the source doesn't matter
+	\scalebox{0.3}{\includesvg{\cardpicture}} % Scales the image to a size that makes plenty of room for the cardtext
 \end{figure}
 \centerline{\textbf{\cardname}}
-\section*{}
-\vspace{-3ex}
-\raggedright
+\section*{} % the '*' removes section numbers
+\vspace{-3ex} % Removes some whitespace
+\raggedright % left aligned text instead of justified looks better when there are few words per line
 \cardtext
 \end{document}
