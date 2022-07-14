@@ -27,15 +27,15 @@
 \centering
 % Use a 3x3 table to place the values, but only if there are values given on the card
 \begin{tabular}{p{0.25\linewidth} p{0.25\linewidth} p{0.25\linewidth}}
-\ifthenelse{\isundefined{\upperleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\upperleft}}} &
+\ifthenelse{\isundefined{\upperleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\upperleft}}} &
 \ifthenelse{\isundefined{\uppercenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\uppercenter}}} &
-\ifthenelse{\isundefined{\upperright}}{}{\ovalbox{\parbox{0.25\textwidth}{\hfill\upperright}}}\\
-\ifthenelse{\isundefined{\middleleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\middleleft}}} &
+\ifthenelse{\isundefined{\upperright}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\upperright}}}\\
+\ifthenelse{\isundefined{\middleleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\middleleft}}} &
 \ifthenelse{\isundefined{\middlecenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\middlecenter}}} &
-\ifthenelse{\isundefined{\middleright}}{}{\ovalbox{\parbox{0.25\textwidth}{\hfill\middleright}}}\\
-\ifthenelse{\isundefined{\lowerleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\lowerleft}}} &
+\ifthenelse{\isundefined{\middleright}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\middleright}}}\\
+\ifthenelse{\isundefined{\lowerleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\lowerleft}}} &
 \ifthenelse{\isundefined{\lowercenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\lowercenter}}} &
-\ifthenelse{\isundefined{\lowerright}}{}{\ovalbox{\parbox{0.25\textwidth}{\hfill\lowerright}}}\\
+\ifthenelse{\isundefined{\lowerright}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\lowerright}}}\\
 \end{tabular}
 \end{minipage}
 }
