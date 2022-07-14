@@ -12,9 +12,11 @@
 \usepackage{fancybox} % Used to make ovalbox
 \usepackage{fontsize} % Used to change the base size of the font
   \changefontsize[10pt]{9pt} % Setting a slightly smaller font to fit the boxes
+\usepackage{booktabs} % to add extra white space around rows
 
 %\usepackage{showframe}
 %\renewcommand*\ShowFrameColor{\color{red}}
+
 
 \input{template-font}
 \setlength\parindent{0pt} % we do not want to repeat \noindent everwhere
@@ -30,9 +32,11 @@
 \ifthenelse{\isundefined{\upperleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\upperleft}}} &
 \ifthenelse{\isundefined{\uppercenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\uppercenter}}} &
 \ifthenelse{\isundefined{\upperright}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\upperright}}}\\
+\\ % blank row to create some space
 \ifthenelse{\isundefined{\middleleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\middleleft}}} &
 \ifthenelse{\isundefined{\middlecenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\middlecenter}}} &
 \ifthenelse{\isundefined{\middleright}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\middleright}}}\\
+\\ % blank row to create some space
 \ifthenelse{\isundefined{\lowerleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\lowerleft}}} &
 \ifthenelse{\isundefined{\lowercenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\lowercenter}}} &
 \ifthenelse{\isundefined{\lowerright}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\lowerright}}}\\
