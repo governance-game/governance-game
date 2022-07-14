@@ -25,15 +25,15 @@
 \centering
 % Use a 3x3 table to place the values, but only if there are values given on the card
 \begin{tabular}{p{0.25\linewidth} p{0.25\linewidth} p{0.25\linewidth}}
-\ifthenelse{\isundefined{\upperleft}}{}{\upperleft} &
-\ifthenelse{\isundefined{\uppercenter}}{}{\centering\uppercenter} &
-\ifthenelse{\isundefined{\upperright}}{}{\hfill\upperright}\\
-\ifthenelse{\isundefined{\middleleft}}{}{\middleleft} &
-\ifthenelse{\isundefined{\middlecenter}}{}{\centering\middlecenter} &
-\ifthenelse{\isundefined{\middleright}}{}{\hfill\middleright}\\
-\ifthenelse{\isundefined{\lowerleft}}{}{\lowerleft} &
-\ifthenelse{\isundefined{\lowercenter}}{}{\centering\lowercenter} &
-\ifthenelse{\isundefined{\lowerright}}{}{\hfill\lowerright}\\
+\ifthenelse{\isundefined{\upperleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\upperleft}}} &
+\ifthenelse{\isundefined{\uppercenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\uppercenter}}} &
+\ifthenelse{\isundefined{\upperright}}{}{\ovalbox{\parbox{0.25\textwidth}{\hfill\upperright}}}\\
+\ifthenelse{\isundefined{\middleleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\middleleft}}} &
+\ifthenelse{\isundefined{\middlecenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\middlecenter}}} &
+\ifthenelse{\isundefined{\middleright}}{}{\ovalbox{\parbox{0.25\textwidth}{\hfill\middleright}}}\\
+\ifthenelse{\isundefined{\lowerleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\lowerleft}}} &
+\ifthenelse{\isundefined{\lowercenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\lowercenter}}} &
+\ifthenelse{\isundefined{\lowerright}}{}{\ovalbox{\parbox{0.25\textwidth}{\hfill\lowerright}}}\\
 \end{tabular}
 \end{minipage}
 }
