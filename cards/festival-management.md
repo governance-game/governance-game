@@ -1,6 +1,0 @@
----
-type: Scenario
----
-
-You have developed an open source festival managing system. Another municipality have replicated it. You use it for managing festivals taking place in your respective municipalities. It has been in use for two years. The main end users of the system are **civil servants** (add that actor card).
-Public organization 1 is Commissioning, 2 is Replicating.
