@@ -78,6 +78,14 @@ ALL_CARD_NAMES=\
  $(ACTOR_CARD_NAMES) \
  $(OBJECT_CARD_NAMES)
 
+CARD_BACKS=\
+ rules-back \
+ actor-back \
+ object-back \
+ scenario-back \
+ start-back \
+ calamity-back
+
 pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
 	@echo SUCCESS
 
@@ -99,8 +107,16 @@ view-actors: $(patsubst %, %.pdf, $(ACTOR_CARD_NAMES))
 view-objects: $(patsubst %, %.pdf, $(OBJECT_CARD_NAMES))
 	$(PDFVIEW) $^
 
-view-all: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
+view-all-fronts: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
 	$(PDFVIEW) $^
+
+%-back.pdf: assets/%-back.svg
+	inkscape --export-type=pdf $< --export-filename=$@
+
+view-all-backs: $(patsubst %, %.pdf, $(CARD_BACKS))
+	$(PDFVIEW) $^
+
+view-all: view-all-fronts view-all-backs
 
 # note: cards only reference one of the templates
 %.pdf: cards/%.tex templates/calamity-template.tex \
