@@ -110,4 +110,4 @@ view-%: %.pdf
 	$(PDFVIEW) $<
 
 clean:
-	rm -fv *.pdf *.aux *.log *.synctex.gz
+	rm -rfv *.pdf *.aux *.log *.synctex.gz svg-inkscape
