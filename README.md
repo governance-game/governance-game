@@ -38,6 +38,31 @@ For now we are using icons from the awesome [Noun Project](https://thenounprojec
 
 We also want to thank everyone who has played the game with us. Even if you didn't explicitly gave us feedback we learned about the game by playing with you.
 
+## Building cards
+
+The Makefile automatically generates a complete card deck for the Governance Game in PDF.
+You can use the PDFs to print the cards yourself and cut them.
+Alternatively, the PDFs are compatible with external printer companies which can print this deck.
+
+### Dependencies
+
+```
+sudo apt install docbook-utils pandoc inkscape texlive texlive-fonts-extra \
+	texlive-extra-utils
+# sudo apt install texlive-full
+```
+
+### Usage
+
+Type `make` to generate the pdf files.
+
+Type `make view-all` to view all of the pdf files generated.
+
+### TODO
+
+- generate card back pdfs
+
+
 ## License
 
 This project is licensed under the CC 0 License - see the [LICENSE](LICENSE.md) file for details.

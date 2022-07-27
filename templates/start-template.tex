@@ -1,0 +1,48 @@
+
+\documentclass{article}
+\usepackage[
+	paperwidth=6.9cm,
+	paperheight=9.4cm,
+	headheight=0cm,
+	margin=0.55cm
+]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{etoolbox,lineno}% http://ctan.org/pkg/{etoolbox,lineno}
+\usepackage{ifthen} % Used to place text only if there is some on the card
+\usepackage{fancybox} % Used to make ovalbox
+\usepackage{fontsize} % Used to change the base size of the font
+  \changefontsize[10pt]{9pt} % Setting a slightly smaller font to fit the boxes
+\usepackage{booktabs} % to add extra white space around rows
+\usepackage{graphicx} % used to rotate the figure
+%\usepackage{showframe}
+%\renewcommand*\ShowFrameColor{\color{red}}
+
+\input{templates/template-font}
+\setlength\parindent{0pt} % we do not want to repeat \noindent everwhere
+\begin{document}
+\begin{figure}[t]
+\rotatebox[origin=c]{90}{
+\pagenumbering{gobble} % turn off pagenumbers
+\hyphenchar\font=-1 % turn off end-of-line word hyphenation
+\ovalbox{
+\noindent\begin{minipage}[c][5.5cm][c]{7.9cm} % A minipage is used to get a fixed size for the table 5x7.9
+\centering\textbf{Starting state}\\
+% Use a 3x3 table to place the values, but only if there are values given on the card
+\begin{tabular}{p{0.25\linewidth} p{0.25\linewidth} p{0.25\linewidth}}
+\ifthenelse{\isundefined{\upperleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\upperleft}}} &
+\ifthenelse{\isundefined{\uppercenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\uppercenter}}} &
+\ifthenelse{\isundefined{\upperright}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\upperright}}}\\
+\\ % blank row to create some space
+\ifthenelse{\isundefined{\middleleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\middleleft}}} &
+\ifthenelse{\isundefined{\middlecenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\middlecenter}}} &
+\ifthenelse{\isundefined{\middleright}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\middleright}}}\\
+\\ % blank row to create some space
+\ifthenelse{\isundefined{\lowerleft}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\lowerleft}}} &
+\ifthenelse{\isundefined{\lowercenter}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\lowercenter}}} &
+\ifthenelse{\isundefined{\lowerright}}{}{\ovalbox{\parbox{0.25\textwidth}{\centering\lowerright}}}\\
+\end{tabular}
+\end{minipage}
+}
+}
+\end{figure}
+\end{document}
