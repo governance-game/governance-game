@@ -15,50 +15,50 @@ PDFLATEX=pdflatex -synctex=1 -interaction=nonstopmode --shell-escape
 all: pdfs
 
 CALAMITY_CARD_NAMES= \
- bug \
- concerns \
- gdpr-compliance \
- lost-funding \
- major-enhancement \
- new-replicator \
- wild-developer
+ calamity-bug \
+ calamity-concerns \
+ calamity-gdpr-compliance \
+ calamity-lost-funding \
+ calamity-major-enhancement \
+ calamity-new-replicator \
+ calamity-wild-developer
 
 ACTOR_CARD_NAMES= \
- association-of-public-organizations \
- citizen \
- civil-servant \
- commissioning-public-organization \
- development-vendor \
- governance-body \
- hosting-vendor \
- independent-developer \
- inhouse-developer \
- replicating-public-organization \
- support-vendor \
- technical-steering-group
+ actor-association-of-public-organizations \
+ actor-citizen \
+ actor-civil-servant \
+ actor-commissioning-public-organization \
+ actor-development-vendor \
+ actor-governance-body \
+ actor-hosting-vendor \
+ actor-independent-developer \
+ actor-inhouse-developer \
+ actor-replicating-public-organization \
+ actor-support-vendor \
+ actor-technical-steering-group
 
 OBJECT_CARD_NAMES=\
- back-end \
- backlog \
- codebase \
- front-end \
- policy1 \
- policy2
+ object-back-end \
+ object-backlog \
+ object-codebase \
+ object-front-end \
+ object-policy1 \
+ object-policy2
 
 RULES_CARD_NAMES=\
- introduction \
- setup \
- rules \
- goal \
- calamities \
- credits
+ rules-introduction \
+ rules-setup \
+ rules-rules \
+ rules-goal \
+ rules-calamities \
+ rules-credits
 
 SCENARIO_CARD_NAMES=\
- festival-management \
- localization-plugin \
- public-transport \
- recycling-station \
- wifi
+ scenario-festival-management \
+ scenario-localization-plugin \
+ scenario-public-transport \
+ scenario-recycling-station \
+ scenario-wifi
 
 START_CARD_NAMES=\
  starting-state-1 \
