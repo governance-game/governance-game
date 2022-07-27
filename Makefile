@@ -102,7 +102,7 @@ view-all: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
 	$(PDFVIEW) $^
 
 # note: cards only reference one of the templates
-%.pdf: ../cards/%.tex calamity-template.tex actor-template.tex \
+%.pdf: cards/%.tex calamity-template.tex actor-template.tex \
 		rules-template.tex scenario-template.tex start-template.tex
 	$(PDFLATEX) $<
 
