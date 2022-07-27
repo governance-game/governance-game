@@ -1,5 +1,4 @@
-foo.pdf
-
+*.pdf
 *.aux
 *.log
 *.synctex.gz
