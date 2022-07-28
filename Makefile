@@ -60,7 +60,7 @@ SCENARIO_CARD_NAMES=\
  scenario-recycling-station \
  scenario-wifi
 
-START_CARD_NAMES=\
+STARTING_CARD_NAMES=\
  starting-state-1 \
  starting-state-2 \
  starting-state-3 \
@@ -73,7 +73,7 @@ START_CARD_NAMES=\
 ALL_CARD_NAMES=\
  $(RULES_CARD_NAMES) \
  $(SCENARIO_CARD_NAMES) \
- $(START_CARD_NAMES) \
+ $(STARTING_CARD_NAMES) \
  $(CALAMITY_CARD_NAMES) \
  $(ACTOR_CARD_NAMES) \
  $(OBJECT_CARD_NAMES)
@@ -95,7 +95,7 @@ view-rules: $(patsubst %, %.pdf, $(RULES_CARD_NAMES))
 view-scenarios: $(patsubst %, %.pdf, $(SCENARIO_CARD_NAMES))
 	$(PDFVIEW) $^
 
-view-startings: $(patsubst %, %.pdf, $(START_CARD_NAMES))
+view-startings: $(patsubst %, %.pdf, $(STARTING_CARD_NAMES))
 	$(PDFVIEW) $^
 
 view-calamaties: $(patsubst %, %.pdf, $(CALAMITY_CARD_NAMES))
