@@ -8,7 +8,7 @@
 # patsubst : $(patsubst pattern,replacement,text)
 #	https://www.gnu.org/software/make/manual/html_node/Text-Functions.html
 
-
+SHELL=/bin/bash
 PDFVIEW=evince
 PDFLATEX=pdflatex -synctex=1 -interaction=nonstopmode --shell-escape
 
@@ -83,10 +83,10 @@ CARD_BACKS=\
  actor-back \
  object-back \
  scenario-back \
- start-back \
+ starting-back \
  calamity-back
 
-pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
+pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 	@echo SUCCESS
 
 view-rules: $(patsubst %, %.pdf, $(RULES_CARD_NAMES))
@@ -95,7 +95,7 @@ view-rules: $(patsubst %, %.pdf, $(RULES_CARD_NAMES))
 view-scenarios: $(patsubst %, %.pdf, $(SCENARIO_CARD_NAMES))
 	$(PDFVIEW) $^
 
-view-starts: $(patsubst %, %.pdf, $(START_CARD_NAMES))
+view-startings: $(patsubst %, %.pdf, $(START_CARD_NAMES))
 	$(PDFVIEW) $^
 
 view-calamaties: $(patsubst %, %.pdf, $(CALAMITY_CARD_NAMES))
@@ -139,11 +139,23 @@ scenario-%.pdf: cards/scenario-%.tex templates/template-font.tex \
 	$(PDFLATEX) $<
 
 starting-%.pdf: cards/starting-%.tex templates/template-font.tex \
-		templates/start-template.tex
+		templates/starting-template.tex
 	$(PDFLATEX) $<
 
 view-%: %.pdf
 	$(PDFVIEW) $<
 
+number-pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
+	mkdir -pv num-front
+	mkdir -pv num-back
+	export NUM=0; for card in $^; do \
+		if [[ "$$card" != *back.pdf ]]; then \
+			export NUM=$$(( $$NUM + 1 )); \
+			cp -v $$card num-front/$${NUM}.pdf; \
+			export PREFIX=`echo $$card | cut -f1 -d'-'`; \
+			cp -v $$PREFIX-back.pdf num-back/$${NUM}.pdf; \
+		fi \
+	done
+
 clean:
-	rm -rfv *.pdf *.aux *.log *.synctex.gz svg-inkscape
+	rm -rfv *.pdf *.aux *.log *.synctex.gz svg-inkscape num-front num-back
