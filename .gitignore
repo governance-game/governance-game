@@ -3,3 +3,5 @@
 *.log
 *.synctex.gz
 svg-inkscape/
+num-front/
+num-back/

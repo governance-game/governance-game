@@ -152,8 +152,18 @@ number-pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 		if [[ "$$card" != *back.pdf ]]; then \
 			export NUM=$$(( $$NUM + 1 )); \
 			cp -v $$card num-front/$${NUM}.pdf; \
+			inkscape --export-type=png num-front/$${NUM}.pdf \
+				 --export-filename=num-front/$${NUM}.png \
+				 --export-width=816 \
+				 --export-height=1110 \
+				 --export-dpi=300; \
 			export PREFIX=`echo $$card | cut -f1 -d'-'`; \
 			cp -v $$PREFIX-back.pdf num-back/$${NUM}.pdf; \
+			inkscape --export-type=png num-back/$${NUM}.pdf \
+				 --export-filename=num-back/$${NUM}.png \
+				 --export-width=816 \
+				 --export-height=1110 \
+				 --export-dpi=300; \
 		fi \
 	done
 
