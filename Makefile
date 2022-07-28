@@ -118,13 +118,27 @@ view-all-backs: $(patsubst %, %.pdf, $(CARD_BACKS))
 
 view-all: view-all-fronts view-all-backs
 
-# note: cards only reference one of the templates
-%.pdf: cards/%.tex \
-		templates/template-font.tex \
-		templates/calamity-template.tex \
-		templates/actor-template.tex \
-		templates/rules-template.tex \
-		templates/scenario-template.tex \
+calamity-%.pdf: cards/calamity-%.tex templates/template-font.tex \
+		templates/calamity-template.tex
+	$(PDFLATEX) $<
+
+actor-%.pdf: cards/actor-%.tex templates/template-font.tex \
+		templates/actor-template.tex
+	$(PDFLATEX) $<
+
+rules-%.pdf: cards/rules-%.tex templates/template-font.tex \
+		templates/rules-template.tex
+	$(PDFLATEX) $<
+
+object-%.pdf: cards/object-%.tex templates/template-font.tex \
+		templates/object-template.tex
+	$(PDFLATEX) $<
+
+scenario-%.pdf: cards/scenario-%.tex templates/template-font.tex \
+		templates/scenario-template.tex
+	$(PDFLATEX) $<
+
+starting-%.pdf: cards/starting-%.tex templates/template-font.tex \
 		templates/start-template.tex
 	$(PDFLATEX) $<
 
