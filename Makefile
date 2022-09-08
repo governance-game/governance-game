@@ -51,7 +51,8 @@ RULES_CARD_NAMES=\
  rules-rules \
  rules-goal \
  rules-calamities \
- rules-credits
+ rules-credits \
+ rules-about
 
 SCENARIO_CARD_NAMES=\
  scenario-festival-management \
