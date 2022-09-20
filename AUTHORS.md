@@ -1,4 +1,4 @@
-#Authors
+# Authors
 
 [The Foundation for Public Code](https://publiccode.net):
 
