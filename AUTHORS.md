@@ -4,6 +4,7 @@
 
 * Jan Ainali
 * Ben Cerveny
+* Felix Faassen
 * Elena Findley-de Regt
 * Eric Herman
 * Claus Mullie
