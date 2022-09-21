@@ -22,6 +22,7 @@ By [Grégory Montigny](https://thenounproject.com/simpleicon):
 * [Judge](https://thenounproject.com/term/judge/1974854)
 * [operator](https://thenounproject.com/term/operator/1974933)
 * [mover](https://thenounproject.com/term/mover/1974883)
+* [notebook](noun-notebook-1840555)
 
 By [Aman](https://thenounproject.com/amanmana):
 
