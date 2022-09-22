@@ -36,6 +36,7 @@ ACTOR_CARD_NAMES= \
  actor-independent-developer \
  actor-inhouse-developer \
  actor-inhouse-developer-2 \
+ actor-product-steering-group \
  actor-replicating-public-organization \
  actor-replicating-public-organization-2 \
  actor-replicating-public-organization-3 \

@@ -15,6 +15,7 @@ By [Made x Made](https://thenounproject.com/christian933):
 * [government building](https://thenounproject.com/term/government-building/2031469)
 * [government conference](https://thenounproject.com/term/government-conference/2039165)
 * [government](https://thenounproject.com/icon/government-5160705/)
+* [management](https://thenounproject.com/icon/management-1923376/)
 
 By [Grégory Montigny](https://thenounproject.com/simpleicon):
 
