@@ -31,6 +31,7 @@ ACTOR_CARD_NAMES= \
  actor-commissioning-public-organization-2 \
  actor-development-vendor \
  actor-development-vendor-2 \
+ actor-foundation-for-public-code \
  actor-governance-body \
  actor-hosting-vendor \
  actor-independent-developer \
