@@ -49,7 +49,8 @@ OBJECT_CARD_NAMES=\
  object-codebase \
  object-front-end \
  object-policy1 \
- object-policy2
+ object-policy2 \
+ object-documentation
 
 RULES_CARD_NAMES=\
  rules-introduction \
