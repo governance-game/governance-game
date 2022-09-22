@@ -28,12 +28,17 @@ ACTOR_CARD_NAMES= \
  actor-citizen \
  actor-civil-servant \
  actor-commissioning-public-organization \
+ actor-commissioning-public-organization-2 \
  actor-development-vendor \
+ actor-development-vendor-2 \
  actor-governance-body \
  actor-hosting-vendor \
  actor-independent-developer \
  actor-inhouse-developer \
+ actor-inhouse-developer-2 \
  actor-replicating-public-organization \
+ actor-replicating-public-organization-2 \
+ actor-replicating-public-organization-3 \
  actor-support-vendor \
  actor-technical-steering-group
 
