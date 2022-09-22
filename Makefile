@@ -31,11 +31,13 @@ ACTOR_CARD_NAMES= \
  actor-commissioning-public-organization-2 \
  actor-development-vendor \
  actor-development-vendor-2 \
+ actor-foundation-for-public-code \
  actor-governance-body \
  actor-hosting-vendor \
  actor-independent-developer \
  actor-inhouse-developer \
  actor-inhouse-developer-2 \
+ actor-product-steering-group \
  actor-replicating-public-organization \
  actor-replicating-public-organization-2 \
  actor-replicating-public-organization-3 \
