@@ -19,13 +19,9 @@ We love when people want to help and improve the game. Please read [CONTRIBUTING
 
 ## Roadmap
 
-1. Finalize issues for 1.0.0, including at least
-   * Create box design [issue #15](https://github.com/publiccodenet/governance-game/issues/15)
-   * Expand deck with some duplicate cards, stewardship organization [issue #36](https://github.com/publiccodenet/governance-game/issues/36)
-   * Object for documentation, [issue #26](https://github.com/publiccodenet/governance-game/issues/26)
-2. Do a second small scale print run of 1.0.0
-3. Iterate on the cards and rules.
-4. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
+1. Do a second small scale print run of 1.0.0
+2. Iterate on the cards and rules.
+3. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
 
 ## Versioning
 
