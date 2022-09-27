@@ -14,6 +14,8 @@ By [Made x Made](https://thenounproject.com/christian933):
 * [government](https://thenounproject.com/term/government/2031474)
 * [government building](https://thenounproject.com/term/government-building/2031469)
 * [government conference](https://thenounproject.com/term/government-conference/2039165)
+* [government](https://thenounproject.com/icon/government-5160705/)
+* [management](https://thenounproject.com/icon/management-1923376/)
 
 By [Grégory Montigny](https://thenounproject.com/simpleicon):
 
@@ -22,6 +24,7 @@ By [Grégory Montigny](https://thenounproject.com/simpleicon):
 * [Judge](https://thenounproject.com/term/judge/1974854)
 * [operator](https://thenounproject.com/term/operator/1974933)
 * [mover](https://thenounproject.com/term/mover/1974883)
+* [notebook](noun-notebook-1840555)
 
 By [Aman](https://thenounproject.com/amanmana):
 

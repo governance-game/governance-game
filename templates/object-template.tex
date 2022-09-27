@@ -1,0 +1,30 @@
+
+\documentclass{article}
+\usepackage[paperheight=9.4cm,
+	paperwidth=6.9cm,
+	textwidth=5.4cm,
+	textheight=5.5cm,
+	headsep=0.5cm % Gives room for the header to move away from the top edge
+]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{etoolbox,lineno}% http://ctan.org/pkg/{etoolbox,lineno}
+\usepackage{float} % Needed for placement of image
+\usepackage{svg} % Needed to insert an svg image
+\usepackage{fancyhdr} % Used to justify the header and the footer
+
+% This section sets up and creates a header and a footer
+\pagestyle{fancy} % Declares that we are using our own pagestyle using fancy
+\fancyhf{} % Adds both a header and a footer
+\renewcommand{\headrulewidth}{0pt} % Completely removes the line from the header
+\rhead{{\small\cardtype}}
+\lhead{{\small\cardnumber}}
+\cfoot{\textbf{\Large{\cardname}}}
+
+\input{templates/template-font}
+\begin{document}
+\begin{figure}[H]
+	\centering
+	\def\svgwidth{\columnwidth} % Normalizes the size of the SVG to the column width so that the size in the source doesn't matter
+	\scalebox{0.9}{\includesvg{\cardpicture}}
+\end{figure}
+\end{document}

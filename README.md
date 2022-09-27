@@ -19,11 +19,9 @@ We love when people want to help and improve the game. Please read [CONTRIBUTING
 
 ## Roadmap
 
-1. Finalize first design with Noun project icons and do a print. :heavy_check_mark:
-2. Test the game with real users and collect feedback.
-3. Iterate on the cards and rules. Create custom icons/imagery?
-4. Do a second small scale print run.
-5. More testing, tuning and preparation for next print run.
+1. Do a second small scale print run of 1.0.0
+2. Iterate on the cards and rules.
+3. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
 
 ## Versioning
 
@@ -37,6 +35,37 @@ See the list of [authors](AUTHORS.md) for who participated to this project.
 For now we are using icons from the awesome [Noun Project](https://thenounproject.com). Those icons are all under the license [CC BY](https://creativecommons.org/licenses/by/3.0/us/legalcode). Find all images used and their creators in our [Credits](CREDITS.md).
 
 We also want to thank everyone who has played the game with us. Even if you didn't explicitly gave us feedback we learned about the game by playing with you.
+
+## Building cards
+
+The Makefile automatically generates a complete card deck for the Governance Game in PDF.
+You can use the PDFs to print the cards yourself and cut them.
+Alternatively, the PDFs are compatible with external printer companies which can print this deck.
+
+### Dependencies
+
+```
+sudo apt install docbook-utils pandoc inkscape texlive texlive-fonts-extra \
+	texlive-extra-utils
+# sudo apt install texlive-full
+```
+
+The `Inter` font family is used.
+To generate `.png` files, `inkscape` requires these fonts to be installed.
+Download the [Inter font family](https://fonts.google.com/specimen/Inter).
+Ensure that the fonts are installed in your system, for example
+[Debian Installation of True Type Fonts](https://wiki.debian.org/TrueType#Installation_of_True_Type_Fonts).
+
+### Usage
+
+Type `make` to generate the pdf files.
+
+Type `make view-all` to view all of the pdf files generated.
+
+### TODO
+
+- generate card back pdfs
+
 
 ## License
 

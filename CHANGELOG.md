@@ -1,5 +1,21 @@
 # Version history
 
+## Version 1.0.0
+
+* Added cards:
+  * Product steering group
+  * Stewardship organization
+  * Documentation
+  * Foundation for Public Code
+  * An "about" card
+  * Duplicated cards to make total 54 cards
+* Added backsides for cards
+* Added Felix to authors
+* Decks are now generated programmatically
+* Adding instructions for how to add a new card
+* Adding instructions on how to get a deck printed professionally, see [blog post](https://blog.publiccode.net/news/2022/09/15/printing-your-own-governance-game.html)
+* Copyedit of text
+
 ## Version 0.3.0
 
 November 27th 2019: 🌠 made the small changes for it to be ready to print.
