@@ -11,7 +11,7 @@ You need a few people to play with you. There are no strict number, but you all 
 
 ## Print your own version
 
-Print and cut the files. Play!
+See [PRINTING](PRINTING.md) for tested printing methods.
 
 ## Contributing
 
@@ -38,9 +38,7 @@ We also want to thank everyone who has played the game with us. Even if you didn
 
 ## Building cards
 
-The Makefile automatically generates a complete card deck for the Governance Game in PDF.
-You can use the PDFs to print the cards yourself and cut them.
-Alternatively, the PDFs are compatible with external printer companies which can print this deck.
+The Makefile automatically generates a complete card deck for the Governance Game in PDF and PNG.
 
 ### Dependencies
 
@@ -61,11 +59,6 @@ Ensure that the fonts are installed in your system, for example
 Type `make` to generate the pdf files.
 
 Type `make view-all` to view all of the pdf files generated.
-
-### TODO
-
-- generate card back pdfs
-
 
 ## License
 
