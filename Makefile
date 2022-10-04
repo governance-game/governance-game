@@ -40,7 +40,6 @@ ACTOR_CARD_NAMES= \
  actor-product-steering-group \
  actor-replicating-public-organization \
  actor-replicating-public-organization-2 \
- actor-replicating-public-organization-3 \
  actor-stewardship-organization \
  actor-support-vendor \
  actor-technical-steering-group
@@ -52,7 +51,8 @@ OBJECT_CARD_NAMES=\
  object-front-end \
  object-policy1 \
  object-policy2 \
- object-documentation
+ object-documentation \
+ object-standard-for-public-code
 
 RULES_CARD_NAMES=\
  rules-introduction \
