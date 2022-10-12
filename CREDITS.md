@@ -16,6 +16,7 @@ By [Made x Made](https://thenounproject.com/christian933):
 * [government conference](https://thenounproject.com/term/government-conference/2039165)
 * [government](https://thenounproject.com/icon/government-5160705/)
 * [management](https://thenounproject.com/icon/management-1923376/)
+* [democracy](https://thenounproject.com/icon/democracy-2003971/)
 
 By [Grégory Montigny](https://thenounproject.com/simpleicon):
 
