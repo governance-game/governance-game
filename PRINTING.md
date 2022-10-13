@@ -7,7 +7,7 @@ Each section provides details for a different service provider or method of crea
 
 Start by building the files using `make number-pdfs`.
 This will generate a bunch of files, and the ones that will be used for printing will be placed in the folders `num-front` and `num-back`.
-You can use either the pdf files or the png files when ordering, but the pdf adds on an extra handling fee. The list below describes the process for png files. Note that the kerning on the png files are not as good as the pdf files (tracked in [#37](https://github.com/publiccodenet/governance-game/issues/37)).
+You can use either the pdf files or the png files when ordering, but the pdf adds on an extra handling fee. The list below describes the process for png files.
 
 The product to order is [Blanko Spielkarten 63 x 88mm Personalisieren](https://www.printerstudio.de/machen/blanko-spielkarten-63x88mm-personalisieren.html).
 The three options on the product page is for the quality of the paper, how many cards are in a deck and what kind of box you want.
