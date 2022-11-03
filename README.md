@@ -5,7 +5,8 @@
 This is an interactive game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html). Use this as a way to get a conversation and reflection about governance started. We aim to use it during [early incubation of a codebase](https://about.publiccode.net/activities/codebase-stewardship/product-assets-for-early-incubation.html), or perhaps even earlier. You can of course play the game totally without our involvement, it is probably useful for any constellation that have a codebase to govern.
 
 ## Playing the game
-You need a few people to play with you. There are no strict number, but you all need to be able to see and reach the cards on the table. For the actual rules, see the rules cards.
+
+You need a few people to play with you. There is no strict number, but you all need to be able to see and reach the cards on the table. For the actual rules, see the rules cards.
 
 ![A picture of the cards in the game on a table](images/cards-640px.jpg)
 
@@ -15,11 +16,11 @@ See [PRINTING](PRINTING.md) for tested printing methods.
 
 ## Contributing
 
-We love when people want to help and improve the game. Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our process for submitting issues and pull requests to us. Also take a look at our [Code of Conduct](CODE_OF_CONDUCT.md), we want this to be an inclusive and welcoming community.
+We love when people want to help improve the game. Please read [CONTRIBUTING](CONTRIBUTING.md) for our process for submitting issues and pull requests to us. Also take a look at our [Code of Conduct](CODE_OF_CONDUCT.md) - we want this to be an inclusive and welcoming community.
 
 ## Roadmap
 
-1. Do a second small scale print run of 1.0.0
+1. Do a second small scale print run of 1.0.0.
 2. Iterate on the cards and rules.
 3. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
 
@@ -29,12 +30,13 @@ We use [Semantic Versioning](http://semver.org/) for versioning. For the version
 
 ## Authors
 
-See the list of [authors](AUTHORS.md) for who participated to this project.
+See the list of [authors](AUTHORS.md) for who participated in this project.
 
 ## Credits
-For now we are using icons from the awesome [Noun Project](https://thenounproject.com). Those icons are all under the license [CC BY](https://creativecommons.org/licenses/by/3.0/us/legalcode). Find all images used and their creators in our [Credits](CREDITS.md).
 
-We also want to thank everyone who has played the game with us. Even if you didn't explicitly gave us feedback we learned about the game by playing with you.
+For now we're using icons from the awesome [Noun Project](https://thenounproject.com). Those icons are all under the license [CC BY](https://creativecommons.org/licenses/by/3.0/us/legalcode). Find all images used and their creators in our [Credits](CREDITS.md).
+
+We also want to thank everyone who has played the game with us. Even if you didn't explicitly give us feedback we learned about the game by playing with you.
 
 ## Building cards
 
