@@ -58,9 +58,9 @@ Ensure that the fonts are installed in your system, for example
 
 ### Usage
 
-Type `make` to generate the pdf files.
+Type `make` to generate the PDF files.
 
-Type `make view-all` to view all of the pdf files generated.
+Type `make view-all` to view all of the PDF files generated.
 
 ## License
 

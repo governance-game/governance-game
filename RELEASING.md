@@ -1,6 +1,6 @@
 <!-- SPDX-License-Identifier: CC0-1.0 -->
 <!-- written in 2022 by The Foundation for Public Code <info@publiccode.net> -->
-# Releasing a new version of the Governance game
+# Releasing a new version of the Governance Game
 
 1. Review state of the 'develop' branch
     - Ensure all changes intended for release are merged
@@ -13,7 +13,7 @@
     - [ ] Update [`AUTHORS.md`](../AUTHORS.md) with new contributors
     - [ ] Update [`CHANGELOG.md`](../CHANGELOG.md)
     - [ ] Perform extra pass on diff to the 'main' branch
-        - run `make view-all`
+        - Run `make view-all`
         - Ensure no cards runs over two pages
         - If needed, commit fixes and repeat extra pass
     - [ ] Push branch, open a pull request to the 'main' branch
@@ -33,7 +33,7 @@
         - Ensure fonts are installed
         - Make cards with `make number-pdfs`
         - Optionally, for a visual pre-check, view all the files
-        - Create zip files for the pdfs and pngs with `zip 
+        - Create zip files for the PDFs and PNGs with `zip 
 governance-game-cards-pdf.$MAJOR.$MINOR.$PATCH.zip
  $(find ./num-front ./num-back/ -name '*.pdf')` and `zip 
 governance-game-cards-png.$MAJOR.$MINOR.$PATCH.zip
