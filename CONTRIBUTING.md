@@ -16,7 +16,7 @@ To add to the documentation or code of one of our projects, make a pull request.
 
 If you've never used GitHub, get up to speed with [Understanding the GitHub flow](https://guides.github.com/introduction/flow/) or follow one of the great free interactive courses in the [GitHub learning lab](https://lab.github.com/) on working with GitHub and Markdown, the syntax this project's documentation is in.
 
-This project is [licensed CC0](LICENSE.md). By contributing you agree to release all your contributions to it under the same license.
+This project is [licensed CC 0](LICENSE.md). By contributing you agree to release all your contributions to it under the same license.
 
 ### 1. Make your changes
 
