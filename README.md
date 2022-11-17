@@ -2,11 +2,16 @@
 
 [![Introduction video to the game](images/video-preview.jpg)](https://www.youtube.com/watch?v=Dt0WFla4eeM)
 
-This is an interactive game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html). Use this as a way to get a conversation and reflection about governance started. We aim to use it during [early incubation of a codebase](https://about.publiccode.net/activities/codebase-stewardship/product-assets-for-early-incubation.html), or perhaps even earlier. You can of course play the game totally without our involvement, it is probably useful for any constellation that have a codebase to govern.
+This is an interactive game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html).
+Use this as a way to get a conversation and reflection about governance started.
+We aim to use it during [early incubation of a codebase](https://about.publiccode.net/activities/codebase-stewardship/product-assets-for-early-incubation.html), or perhaps even earlier.
+You can of course play the game totally without our involvement, it is probably useful for any constellation that have a codebase to govern.
 
 ## Playing the game
 
-You need a few people to play with you. There is no strict number, but you all need to be able to see and reach the cards on the table. For the actual rules, see the rules cards.
+You need a few people to play with you.
+There is no strict number, but you all need to be able to see and reach the cards on the table.
+For the actual rules, see the rules cards.
 
 ![A picture of the cards in the game on a table](images/cards-640px.jpg)
 
@@ -37,9 +42,12 @@ See the list of [authors](AUTHORS.md) for who participated in this project.
 
 ## Credits
 
-For now we're using icons from the awesome [Noun Project](https://thenounproject.com). Those icons are all under the license [CC BY](https://creativecommons.org/licenses/by/3.0/us/legalcode). Find all images used and their creators in our [Credits](CREDITS.md).
+For now we're using icons from the awesome [Noun Project](https://thenounproject.com).
+Those icons are all under the license [CC BY](https://creativecommons.org/licenses/by/3.0/us/legalcode).
+Find all images used and their creators in our [Credits](CREDITS.md).
 
-We also want to thank everyone who has played the game with us. Even if you didn't explicitly give us feedback we learned about the game by playing with you.
+We also want to thank everyone who has played the game with us.
+Even if you didn't explicitly give us feedback we learned about the game by playing with you.
 
 ## Building cards
 
