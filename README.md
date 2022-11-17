@@ -16,7 +16,10 @@ See [PRINTING](PRINTING.md) for tested printing methods.
 
 ## Contributing
 
-We love when people want to help improve the game. Please read [CONTRIBUTING](CONTRIBUTING.md) for our process for submitting issues and pull requests to us. Also take a look at our [Code of Conduct](CODE_OF_CONDUCT.md) - we want this to be an inclusive and welcoming community.
+We love when people want to help improve the game.
+Please read [CONTRIBUTING](CONTRIBUTING.md) for our process for submitting issues and pull requests to us.
+Also take a look at our [Code of Conduct](CODE_OF_CONDUCT.md).
+We want this to be an inclusive and welcoming community.
 
 ## Roadmap
 
@@ -64,4 +67,4 @@ Type `make view-all` to view all of the PDF files generated.
 
 ## License
 
-This project is licensed under the CC 0 License - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the CC 0 License, see the [LICENSE](LICENSE.md) file for details.
