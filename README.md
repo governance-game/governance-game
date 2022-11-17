@@ -75,4 +75,4 @@ Type `make view-all` to view all of the PDF files generated.
 
 ## License
 
-This project is licensed under the CC 0 License, see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the CC 0 License, see the [LICENSE](LICENSE) file for details.
