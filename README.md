@@ -34,7 +34,8 @@ We want this to be an inclusive and welcoming community.
 
 ## Versioning
 
-We use [Semantic Versioning](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/publiccode/govgame/tags) (and [change log](CHANGELOG.md)).
+We use [Semantic Versioning](http://semver.org/) for versioning.
+For the versions available, see the [tags on this repository](https://github.com/publiccodenet/governance-game/tags) (and [change log](CHANGELOG.md)).
 
 ## Authors
 
