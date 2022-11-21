@@ -35,17 +35,17 @@ Make sure to write tests that show the behavior of the newly added or changed co
 
 #### Adding a new card
 
-1. Create a new `.tex` file in the [cards directory](https://github.com/publiccodenet/governance-game/tree/develop/cards). It's easiest to copy an existing card of the same type. Make sure that the file name starts with the card type followed by the card name in [kebab-case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case).
-2. Add the card name in the appropriate section in the [Makefile](https://github.com/publiccodenet/governance-game/blob/develop/Makefile).
-3. Add the `.svg` image to use on the card (if the card type uses images) in the [assets directory](https://github.com/publiccodenet/governance-game/tree/develop/assets).
-4. If an image was used, add appropriate credits for the image on the [credits card](https://github.com/publiccodenet/governance-game/blob/develop/cards/rules-credits.tex) and the [CREDITS file](https://github.com/publiccodenet/governance-game/blob/develop/CREDITS.md).
+1. Create a new `.tex` file in the [cards](./cards/) directory. It's easiest to copy an existing card of the same type. Make sure that the file name starts with the card type followed by the card name in [kebab-case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case).
+2. Add the card name in the appropriate section in the [Makefile](Makefile).
+3. Add the `.svg` image to use on the card (if the card type uses images) in the [assets](./assets/) directory.
+4. If a new image was used, add appropriate credits for the image in [cards/rules-credits.tex](./cards/rules-credits.tex) and in [CREDITS.md](CREDITS.md).
 
 #### Adding a printing process
 
 After successfully printing a deck through a new service, please document that practice to help more people produce their own deck of cards.
 
-1. Modify the [Makefile](https://github.com/publiccodenet/governance-game/blob/develop/Makefile) to generate cards to the specifications required for the printer.
-2. Add a new section on [PRINTING](PRINTING.md) with a heading name of the printing service/company with the country in parentheses. This section should explain what arguments to use when calling `make` and what files are generated, include a link to the product page or similar and roughly explain the process for placing an order. Any extra comments, or known problems, that help someone use that service are welcome.
+1. Modify the [Makefile](Makefile) to generate cards to the specifications required for the printer.
+2. Add a new section in [PRINTING.md](PRINTING.md) with a heading name of the printing service/company with the country in parentheses. This section should explain what arguments to use when calling `make` and what files are generated, include a link to the product page or similar and roughly explain the process for placing an order. Any extra comments, or known problems, that help someone use that service are welcome.
 
 ### 2. Pull request
 
