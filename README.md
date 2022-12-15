@@ -63,10 +63,12 @@ sudo apt install docbook-utils pandoc inkscape texlive texlive-fonts-extra \
 ```
 
 The `Inter` font family is used.
+The `texlive-fonts-extra` package provides `latex/inter/inter.sty`.
 To generate `.png` files, `inkscape` requires these fonts to be installed.
 Download the [Inter font family](https://fonts.google.com/specimen/Inter).
 Ensure that the fonts are installed in your system, for example
 [Debian Installation of True Type Fonts](https://wiki.debian.org/TrueType#Installation_of_True_Type_Fonts).
+Or `make ensure-font` to run [`script/ensure-font.sh`](script/ensure-font.sh).
 
 ### Usage
 

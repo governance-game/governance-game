@@ -177,5 +177,9 @@ number-pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 		fi \
 	done
 
+.PHONY: ensure-font
+ensure-font: scripts/ensure-font.sh
+	scripts/ensure-font.sh
+
 clean:
 	rm -rfv *.pdf *.aux *.log *.synctex.gz svg-inkscape num-front num-back
