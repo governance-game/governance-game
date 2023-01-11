@@ -1,17 +1,24 @@
 #!/bin/bash
 # SPDX-License-Identifier: CC0-1.0
-# SPDX-FileCopyrightText: 2022 The Foundation for Public Code <info@publiccode.net>
+# SPDX-FileCopyrightText: 2022-2023 The Foundation for Public Code <info@publiccode.net>
 
 # Create a 'release.body' file for the text describing a release
 
 VERSION=$(script/version.sh)
 echo "# Governance Game version $VERSION" > release.body
-if ! grep -q "$VERSION" CHANGELOG.md; then
-	echo "" >> release.body
-	git log -1 | head -n1 >> release.body
-	exit
+
+# strip the trailing version info if exists, e.g: '1.2.3-rc2' becomes '1.2.3'
+BASE_VERSION=$( echo "$VERSION" | sed 's/^\([0-9]*\.[0-9]*\.[0-9]*\).*/\1/' )
+
+# pull out the top of the CHANGELOG
+START=$( grep "##" CHANGELOG.md | head -n1 )
+
+# if the first CHANGELOG entry (START) does not match the BASE_VERSION,
+# then print error and exit
+if ! grep -q "$BASE_VERSION" <<< "$START"; then
+	echo "Start of CHANGELOG.md does not match $BASE_VERSION"
+	exit 1
 fi
 
-START=$(grep "$VERSION" CHANGELOG.md | head -n1)
 NEXT=$(grep '##' CHANGELOG.md | head -n2 | tail -n1)
 sed -n "/$START/,/$NEXT/p" CHANGELOG.md | grep -v '^##' >> release.body
