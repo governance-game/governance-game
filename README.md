@@ -2,7 +2,7 @@
 
 [![Introduction video to the game](images/video-preview.jpg)](https://www.youtube.com/watch?v=Dt0WFla4eeM)
 
-This is an interactive game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html).
+This is a game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html).
 Use this as a way to get a conversation and reflection about governance started.
 We aim to use it during [early incubation of a codebase](https://about.publiccode.net/activities/codebase-stewardship/product-assets-for-early-incubation.html), or perhaps even earlier.
 You can of course play the game totally without our involvement, it is probably useful for any constellation that have a codebase to govern.
@@ -28,9 +28,8 @@ We want this to be an inclusive and welcoming community.
 
 ## Roadmap
 
-1. Do a second small scale print run of 1.0.0.
-2. Iterate on the cards and rules.
-3. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
+1. Iterate on the cards and rules.
+2. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
 
 ## Versioning
 
