@@ -30,6 +30,7 @@ We want this to be an inclusive and welcoming community.
 
 1. Iterate on the cards and rules.
 2. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
+3. Script updateable box design
 
 ## Versioning
 
