@@ -26,20 +26,7 @@
     - [ ] Switch to the 'main' branch, `git pull` and `git status`
     - [ ] `git tag $MAJOR.$MINOR.$PATCH`
     - [ ] `git push --tags`
-    - [ ] From https://github.com/publiccodenet/standard/tags select "create release"
-        - Add changelog bullets
-5. Card Generation
-    - [ ] Generate new PDFs and PNGs
-        - Ensure fonts are installed
-        - Make cards with `make number-pdfs`
-        - Optionally, for a visual pre-check, view all the files
-        - Create zip files for the PDFs and PNGs with `zip 
-governance-game-cards-pdf.$MAJOR.$MINOR.$PATCH.zip
- $(find ./num-front ./num-back/ -name '*.pdf')` and `zip 
-governance-game-cards-png.$MAJOR.$MINOR.$PATCH.zip
- $(find ./num-front ./num-back/ -name '*.png')`
-    - [ ] Add zip files to release, if the box design is updaed, add it as well
-        - In a browser navigate to the release and 'edit'
-        - Drag-and-drop the files into the assets
-7. Update 'develop' with a merge from 'main'
-8. [Send the files for print to the printer](PRINTING.md)
+        - This should generate the release, with changelog bullets
+    - [ ] Add box design to the release
+5. Update 'develop' with a merge from 'main'
+6. [Send the files for print to the printer](PRINTING.md)
