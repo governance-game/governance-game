@@ -1,5 +1,13 @@
 # Version history
 
+## Version 1.0.1
+
+* Added "Standard for Public Code" card.
+* Automated the release artifacts generation.
+* Updated Code of Conduct.
+* Minor changes to supporting files for grammar and clarity.
+* Improved deck generation scripts.
+
 ## Version 1.0.0
 
 * Added cards:
@@ -8,13 +16,13 @@
   * Documentation
   * Foundation for Public Code
   * An "about" card
-  * Duplicated cards to make total 54 cards
-* Added backsides for cards
-* Added Felix to authors
-* Decks are now generated programmatically
-* Adding instructions for how to add a new card
-* Adding instructions on how to get a deck printed professionally, see [blog post](https://blog.publiccode.net/news/2022/09/15/printing-your-own-governance-game.html)
-* Copyedit of text
+  * Duplicated cards to make a total of 54 cards.
+* Added backsides for cards.
+* Added Felix to authors.
+* Decks are now generated programmatically.
+* Added instructions for how to add a new card.
+* Added instructions on how to get a deck printed professionally, see [blog post](https://blog.publiccode.net/news/2022/09/15/printing-your-own-governance-game.html).
+* Copyedit of text.
 
 ## Version 0.3.0
 

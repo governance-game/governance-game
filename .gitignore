@@ -2,6 +2,9 @@
 *.aux
 *.log
 *.synctex.gz
+*.zip
+*.xz
 svg-inkscape/
 num-front/
 num-back/
+release.body

@@ -12,6 +12,8 @@ SHELL=/bin/bash
 PDFVIEW=evince
 PDFLATEX=pdflatex -synctex=1 -interaction=nonstopmode --shell-escape
 
+VERSION:=$(shell script/version.sh)
+
 all: pdfs
 
 CALAMITY_CARD_NAMES= \
@@ -40,7 +42,6 @@ ACTOR_CARD_NAMES= \
  actor-product-steering-group \
  actor-replicating-public-organization \
  actor-replicating-public-organization-2 \
- actor-replicating-public-organization-3 \
  actor-stewardship-organization \
  actor-support-vendor \
  actor-technical-steering-group
@@ -52,7 +53,8 @@ OBJECT_CARD_NAMES=\
  object-front-end \
  object-policy1 \
  object-policy2 \
- object-documentation
+ object-documentation \
+ object-standard-for-public-code
 
 RULES_CARD_NAMES=\
  rules-introduction \
@@ -155,7 +157,7 @@ starting-%.pdf: cards/starting-%.tex templates/template-font.tex \
 view-%: %.pdf
 	$(PDFVIEW) $<
 
-number-pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
+num-front: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 	mkdir -pv num-front
 	mkdir -pv num-back
 	export NUM=0; for card in $^; do \
@@ -177,5 +179,40 @@ number-pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 		fi \
 	done
 
+num-back: num-front
+number-pdfs: num-front num-back
+
+governance-game-$(VERSION).tar.xz: \
+		$(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
+	tar --transform='s@\(.*\)@governance-game-$(VERSION)/\1@g' \
+		-cvJf $@ $^
+
+governance-game-$(VERSION).zip: governance-game-$(VERSION).tar.xz
+	tar xfv $<
+	zip -r $@ governance-game-$(VERSION)
+	rm -rf governance-game-$(VERSION)
+
+governance-game-numbered-$(VERSION).tar.xz: num-front num-back
+	tar --transform='s@\(.*\)@governance-game-numbered-$(VERSION)/\1@g' \
+		-cvJf $@ $^
+
+governance-game-numbered-$(VERSION).zip: \
+		governance-game-numbered-$(VERSION).tar.xz
+	tar xfv $<
+	zip -r $@ governance-game-numbered-$(VERSION)
+	rm -rf governance-game-numbered-$(VERSION)
+
+.PHONY: release
+release: governance-game-$(VERSION).tar.xz \
+	governance-game-$(VERSION).zip \
+	governance-game-numbered-$(VERSION).tar.xz \
+	governance-game-numbered-$(VERSION).zip
+	ls -l $^
+
+.PHONY: ensure-font
+ensure-font: scripts/ensure-font.sh
+	scripts/ensure-font.sh
+
 clean:
-	rm -rfv *.pdf *.aux *.log *.synctex.gz svg-inkscape num-front num-back
+	rm -rfv *.pdf *.aux *.log *.synctex.gz *.xz *.zip \
+		svg-inkscape num-front num-back
