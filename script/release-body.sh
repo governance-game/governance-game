@@ -4,7 +4,13 @@
 
 # Create a 'release.body' file for the text describing a release
 
-VERSION=$(script/version.sh)
+if [ "_${VERBOSE}_" != "__" ] && [ "$VERBOSE" -gt 0 ]; then
+	set -x
+fi
+
+if [ "_${VERSION}_" == "__" ]; then
+	VERSION=$(script/version.sh)
+fi
 echo "# Governance Game version $VERSION" > release.body
 
 # strip the trailing version info if exists, e.g: '1.2.3-rc2' becomes '1.2.3'
@@ -20,5 +26,8 @@ if ! grep -q "$BASE_VERSION" <<< "$START"; then
 	exit 1
 fi
 
-NEXT=$(grep '##' CHANGELOG.md | head -n2 | tail -n1)
-sed -n "/$START/,/$NEXT/p" CHANGELOG.md | grep -v '^##' >> release.body
+#  add BASE_VERSION notes to release.body
+NEXT=$( grep '##' CHANGELOG.md | head -n2 | tail -n1 )
+sed -n "/$START/,/$NEXT/p" CHANGELOG.md \
+	| grep -v '^##' \
+	>> release.body
