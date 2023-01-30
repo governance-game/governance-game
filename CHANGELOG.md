@@ -1,5 +1,13 @@
 # Version history
 
+## Version 1.0.1
+
+* Added "Standard for Public Code" card.
+* Automated the release artifacts generation.
+* Updated Code of Conduct.
+* Minor changes to supporting files for grammar and clarity.
+* Improved deck generation scripts.
+
 ## Version 1.0.0
 
 * Added cards:
