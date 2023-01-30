@@ -38,7 +38,7 @@ jobs:
       - name: upload
         uses: softprops/action-gh-release@v1
         with:
-          prerelease: true
+          prerelease: false
           files: |
             governance-game-*.tar.xz
             governance-game-*.zip
