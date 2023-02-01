@@ -1,5 +1,8 @@
 # Credits
 
+<!-- SPDX-License-Identifier: CC0-1.0 -->
+<!-- SPDX-FileCopyrightText: 2019-2023 The Foundation for Public Code <info@publiccode.net> -->
+
 For now we are using icons from the awesome Noun Project.
 Those icons are all under the license [CC BY](https://creativecommons.org/licenses/by/3.0/us/legalcode).
 These are the icons used and creators of them:

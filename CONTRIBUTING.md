@@ -1,5 +1,8 @@
 # Contributing to this game
 
+<!-- SPDX-License-Identifier: CC0-1.0 -->
+<!-- SPDX-FileCopyrightText: 2019-2023 The Foundation for Public Code <info@publiccode.net> -->
+
 🙇‍♀️ Thank you for contributing!
 
 We love issues and pull requests from everyone.

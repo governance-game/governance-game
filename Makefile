@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2022-2023 The Foundation for Public Code <info@publiccode.net>
+
 # $@ : target label
 # $< : the first prerequisite after the colon
 # $^ : all of the prerequisite files
@@ -99,7 +102,7 @@ CARD_BACKS=\
  calamity-back
 
 pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
-	@echo SUCCESS
+	@echo SUCCESS $@
 
 view-rules: $(patsubst %, %.pdf, $(RULES_CARD_NAMES))
 	$(PDFVIEW) $^
@@ -212,6 +215,10 @@ release: governance-game-$(VERSION).tar.xz \
 .PHONY: ensure-font
 ensure-font: scripts/ensure-font.sh
 	scripts/ensure-font.sh
+
+check: pdfs script/find-missing-spdx.sh
+	script/find-missing-spdx.sh
+	@echo SUCCESS $@
 
 clean:
 	rm -rfv *.pdf *.aux *.log *.synctex.gz *.xz *.zip \

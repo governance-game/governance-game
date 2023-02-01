@@ -1,5 +1,8 @@
 # Printing a deck of the Governance Game
 
+<!-- SPDX-License-Identifier: CC0-1.0 -->
+<!-- SPDX-FileCopyrightText: 2022-2023 The Foundation for Public Code <info@publiccode.net> -->
+
 This file documents the different ways people have printed a deck of the Governance Game.
 Each section provides details for a different service provider or method of creating the deck.
 

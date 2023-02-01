@@ -1,5 +1,8 @@
 # Governance Game
 
+<!-- SPDX-License-Identifier: CC0-1.0 -->
+<!-- SPDX-FileCopyrightText: 2019-2023 The Foundation for Public Code <info@publiccode.net> -->
+
 [![Introduction video to the game](images/video-preview.jpg)](https://www.youtube.com/watch?v=Dt0WFla4eeM)
 
 This is a game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html).
