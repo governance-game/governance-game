@@ -26,6 +26,10 @@ Please read [CONTRIBUTING](CONTRIBUTING.md) for our process for submitting issue
 Also take a look at our [Code of Conduct](CODE_OF_CONDUCT.md).
 We want this to be an inclusive and welcoming community.
 
+It is the intent of the Governance Game development community to develop the game collaboratively.
+Adhering to the criteria set forth in the [Standard for Public Code](https://standard.publiccode.net/) gives us confidence in the process.
+Therefore, the [Foundation for Public Code](https://publiccode.net/) is committed to maintaining and developing the Governance Game at a level of quality that meets the Standard for Public Code.
+
 ## Roadmap
 
 1. Iterate on the cards and rules.

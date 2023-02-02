@@ -3,7 +3,7 @@
 <!-- SPDX-License-Identifier: CC0-1.0 -->
 <!-- SPDX-FileCopyrightText: 2022-2023 by The Foundation for Public Code <info@publiccode.net>, https://standard.publiccode.net/AUTHORS -->
 
-Link to commitment to meet the Standard for Public Code:
+Link to commitment to meet the Standard for Public Code: [README](./README.md)
 
 ## [Code in the open](https://standard.publiccode.net/criteria/code-in-the-open.html)
 
@@ -52,7 +52,7 @@ Requirement | meets | &nbsp;links&nbsp;and&nbsp;notes&nbsp;
 The [codebase](https://standard.publiccode.net/glossary.html#codebase) MUST allow anyone to submit suggestions for changes to the codebase. | yes |
 The codebase MUST include contribution guidelines explaining what kinds of contributions are welcome and how contributors can get involved, for example in a `CONTRIBUTING` file. | yes |
 The codebase MUST document the governance of the codebase, contributions and its community, for example in a `GOVERNANCE` file. |  |
-The codebase SHOULD advertise the committed engagement of involved organizations in the development and maintenance. | |
+The codebase SHOULD advertise the committed engagement of involved organizations in the development and maintenance. | yes |
 The codebase SHOULD have a publicly available roadmap. | yes |
 The codebase SHOULD publish codebase activity statistics. | yes | [GitHub pulse](https://github.com/publiccodenet/governance-game/pulse)
 Including a code of conduct for contributors in the codebase is OPTIONAL. | yes |
