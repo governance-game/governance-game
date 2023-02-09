@@ -25,6 +25,9 @@ If you've never used GitHub, get up to speed with [Understanding the GitHub flow
 This project is [licensed CC 0](LICENSE).
 By contributing you agree to release all your contributions to it under the same license.
 
+Contributions should follow the requirements set out in the criteria of the [Standard for Public code](https://standard.publiccode.net/).
+Reviewers will also be ensuring that contributions are aligned with the [values of public code](https://standard.publiccode.net/introduction.html#values-of-public-code).
+
 ### 1. Make your changes
 
 This project uses the [GitFlow branching model and workflow](https://nvie.com/posts/a-successful-git-branching-model/).
