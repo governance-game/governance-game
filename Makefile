@@ -205,9 +205,13 @@ governance-game-numbered-$(VERSION).zip: \
 	zip -r $@ governance-game-numbered-$(VERSION)
 	rm -rf governance-game-numbered-$(VERSION)
 
+governance-game-box-$(VERSION).pdf: box/printers-studio-box.svg
+	inkscape --export-filename=$@ $<
+
 .PHONY: release
 release: governance-game-$(VERSION).tar.xz \
 	governance-game-$(VERSION).zip \
+	governance-game-box-$(VERSION).pdf \
 	governance-game-numbered-$(VERSION).tar.xz \
 	governance-game-numbered-$(VERSION).zip
 	ls -l $^

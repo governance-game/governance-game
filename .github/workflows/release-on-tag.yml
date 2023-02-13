@@ -41,5 +41,6 @@ jobs:
           prerelease: false
           files: |
             governance-game-*.tar.xz
+            governance-game-box-*.pdf
             governance-game-*.zip
           body_path: release.body
