@@ -30,4 +30,4 @@ The three options on the product page are for the quality of the paper, how many
 
 ### Box
 
-Prepare a PDF file based on the [template](https://www.printerstudio.de/AttachFiles/PackingBox/Template/PLAYINGCARD/CUSTOMBOX/2.5X3.5/poker18_8mm.pdf) and copying in the [SVG original](box/printers-studio-box.svg), saving with layers specified in the template.
+The PDF for the box can be found in the [latest release assets](https://github.com/publiccodenet/governance-game/releases/latest).
