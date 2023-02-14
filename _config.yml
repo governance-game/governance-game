@@ -9,3 +9,5 @@ include:
   - "index.md"
 
 toc: false
+
+baseurl: /
