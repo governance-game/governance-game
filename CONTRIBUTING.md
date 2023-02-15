@@ -13,6 +13,7 @@ If you're not comfortable with Github, you can email use your feedback at <info@
 Please help development by reporting problems, suggesting changes and asking questions.
 To do this, you can [create a GitHub issue](https://help.github.com/articles/creating-an-issue/) for this project in the [GitHub Issues for the Governance Game](https://github.com/publiccodenet/governance-game/issues).
 Ideas for new calamities and scenarios are especially welcome.
+Note: do **not** create public issues for security-related issues, instead, see how to [report security issues](SECURITY.md).
 
 You don't need to change any of our code or documentation to be a contributor!
 
