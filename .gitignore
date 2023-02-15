@@ -11,3 +11,8 @@ svg-inkscape/
 num-front/
 num-back/
 release.body
+
+# from gh-pages branch
+Gemfile.lock
+_site/
+vendor/
