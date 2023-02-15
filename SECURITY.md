@@ -11,7 +11,7 @@ If you discover security issues in the scripts for the Governance game, we reque
 
 If possible, please provide a reproducible test or clear steps on how to reproduce the vulnerability, this will help address the issue quicker.
 
-Please, **do not** report security related issues on the public Github issue tracker, as it can make others vulnerable to the issue.
+Please, **do not** report security related issues on the public Github issue tracker, as it can make others more vulnerable to the issue.
 
 Staff at the Fundation for Public Code will acknowledge your email as soon as possible, within one week, but very likely sooner.
 Once notified, staff aim to ensure any security issues are resolved as soon as posisble.
