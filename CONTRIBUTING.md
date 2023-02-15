@@ -56,6 +56,8 @@ After successfully printing a deck through a new service, please document that p
 ### 2. Pull request
 
 When submitting the pull request, please include a description of the problem you are trying to solve and the issue numbers that this pull request will fix.
+It is preferred for each pull request to address a single issue where possible.
+In some cases a single set of changes may address multiple issues, in which case be sure to list all issue numbers fixed.
 
 ### 3. Improve
 
