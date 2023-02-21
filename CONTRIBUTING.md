@@ -23,8 +23,14 @@ To add to the documentation or code of one of our projects, make a pull request.
 
 If you've never used GitHub, get up to speed with [Understanding the GitHub flow](https://guides.github.com/introduction/flow/) or follow one of the great free interactive courses in the [GitHub learning lab](https://lab.github.com/) on working with GitHub and Markdown, the syntax this project's documentation is in.
 
+### 0. Expectations
+
+#### Licensing
+
 This project is [licensed CC 0](LICENSE).
 By contributing you agree to release all your contributions to it under the same license.
+
+#### Standards
 
 Contributions should follow the requirements set out in the criteria of the [Standard for Public code](https://standard.publiccode.net/).
 Reviewers will also be ensuring that contributions are aligned with the [values of public code](https://standard.publiccode.net/introduction.html#values-of-public-code).
