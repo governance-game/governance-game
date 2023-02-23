@@ -17,6 +17,7 @@ PDFLATEX=pdflatex -synctex=1 -interaction=nonstopmode --shell-escape
 
 VERSION:=$(shell script/version.sh)
 
+.PHONY: all
 all: pdfs
 
 CALAMITY_CARD_NAMES= \
@@ -101,36 +102,46 @@ CARD_BACKS=\
  starting-back \
  calamity-back
 
+.PHONY: pdfs
 pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 	@echo SUCCESS $@
 
+.PHONY: view-rules
 view-rules: $(patsubst %, %.pdf, $(RULES_CARD_NAMES))
 	$(PDFVIEW) $^
 
+.PHONY: view-scenarios
 view-scenarios: $(patsubst %, %.pdf, $(SCENARIO_CARD_NAMES))
 	$(PDFVIEW) $^
 
+.PHONY: view-startings
 view-startings: $(patsubst %, %.pdf, $(STARTING_CARD_NAMES))
 	$(PDFVIEW) $^
 
+.PHONY: view-calamaties
 view-calamaties: $(patsubst %, %.pdf, $(CALAMITY_CARD_NAMES))
 	$(PDFVIEW) $^
 
+.PHONY: view-actors
 view-actors: $(patsubst %, %.pdf, $(ACTOR_CARD_NAMES))
 	$(PDFVIEW) $^
 
+.PHONY: view-objects
 view-objects: $(patsubst %, %.pdf, $(OBJECT_CARD_NAMES))
 	$(PDFVIEW) $^
 
+.PHONY: view-all-fronts
 view-all-fronts: $(patsubst %, %.pdf, $(ALL_CARD_NAMES))
 	$(PDFVIEW) $^
 
 %-back.pdf: assets/%-back.svg
 	inkscape --export-type=pdf $< --export-filename=$@
 
+.PHONY: view-all-backs
 view-all-backs: $(patsubst %, %.pdf, $(CARD_BACKS))
 	$(PDFVIEW) $^
 
+.PHONY: view-all
 view-all: view-all-fronts view-all-backs
 
 calamity-%.pdf: cards/calamity-%.tex templates/template-font.tex \
@@ -160,6 +171,7 @@ starting-%.pdf: cards/starting-%.tex templates/template-font.tex \
 view-%: %.pdf
 	$(PDFVIEW) $<
 
+.PHONY: num-front
 num-front: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 	mkdir -pv num-front
 	mkdir -pv num-back
@@ -182,7 +194,10 @@ num-front: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 		fi \
 	done
 
+.PHONY: num-back
 num-back: num-front
+
+.PHONY: number-pdfs
 number-pdfs: num-front num-back
 
 governance-game-$(VERSION).tar.xz: \
@@ -220,7 +235,7 @@ release: governance-game-$(VERSION).tar.xz \
 ensure-font: scripts/ensure-font.sh
 	scripts/ensure-font.sh
 
-.PHONY:
+.PHONY: check-%.pdf
 check-%.pdf: %.pdf
 	PAGES=$$( qpdf --show-npages $< ); \
 		if [ "$$PAGES" -ne "1" ]; then \
@@ -229,16 +244,16 @@ check-%.pdf: %.pdf
 		fi
 	@echo SUCCESS $@
 
-.PHONY:
+.PHONY: check-pdfs
 check-pdfs: $(patsubst %, check-%.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 	@echo SUCCESS $@
 
-.PHONY:
+.PHONY: check
 check: check-pdfs script/find-missing-spdx.sh
 	script/find-missing-spdx.sh
 	@echo SUCCESS $@
 
-.PHONY:
+.PHONY: clean
 clean:
 	rm -rfv *.pdf *.aux *.log *.synctex.gz *.xz *.zip \
 		svg-inkscape num-front num-back
