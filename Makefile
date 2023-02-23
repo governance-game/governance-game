@@ -246,6 +246,14 @@ check-%.pdf: %.pdf
 
 .PHONY: check-pdfs
 check-pdfs: $(patsubst %, check-%.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
+	NUM_EXPECTED=$$( ls cards/*.tex assets/*back.svg | wc --words ); \
+	NUM_CARDS=$$( ls *.pdf | wc --words); \
+	if [ "$$NUM_EXPECTED" -ne "$$NUM_CARDS" ]; then \
+		echo "expected $$NUM_EXPECTED but was $$NUM_CARDS"; \
+		false; \
+	else \
+		echo "expected $$NUM_EXPECTED and was $$NUM_CARDS"; \
+	fi
 	@echo SUCCESS $@
 
 .PHONY: check
