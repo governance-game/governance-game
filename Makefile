@@ -220,10 +220,25 @@ release: governance-game-$(VERSION).tar.xz \
 ensure-font: scripts/ensure-font.sh
 	scripts/ensure-font.sh
 
-check: pdfs script/find-missing-spdx.sh
+.PHONY:
+check-%.pdf: %.pdf
+	PAGES=$$( qpdf --show-npages $< ); \
+		if [ "$$PAGES" -ne "1" ]; then \
+			echo "$< has $$PAGES pages"; \
+			false; \
+		fi
+	@echo SUCCESS $@
+
+.PHONY:
+check-pdfs: $(patsubst %, check-%.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
+	@echo SUCCESS $@
+
+.PHONY:
+check: check-pdfs script/find-missing-spdx.sh
 	script/find-missing-spdx.sh
 	@echo SUCCESS $@
 
+.PHONY:
 clean:
 	rm -rfv *.pdf *.aux *.log *.synctex.gz *.xz *.zip \
 		svg-inkscape num-front num-back
