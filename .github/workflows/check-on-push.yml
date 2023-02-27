@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2022-2023 The Foundation for Public Code <info@publiccode.net>
+
+name: check-on-push
+on:
+  - push
+  - pull_request
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  check-on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: install-deps
+        # https://yaml.org/spec/1.2.2/#65-line-folding
+        run: >
+          sudo apt-get install -y
+          make
+          docbook-utils
+          pandoc
+          inkscape
+          texlive
+          texlive-fonts-extra
+          texlive-extra-utils
+          fontconfig
+          qpdf
+          aspell
+          aspell-en
+      - name: install-fonts
+        run: script/ensure-font.sh
+      - name: make-check
+        run: make check
