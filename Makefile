@@ -248,16 +248,39 @@ check-%.pdf: %.pdf
 check-pdfs: $(patsubst %, check-%.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 	@echo SUCCESS $@
 
-SPELL_CHECK=aspell --mode=tex --home-dir=. --personal=jargon.txt list
+SPELL_CHECK_CARD=aspell --mode=tex --home-dir=. --personal=jargon.txt list
 .PHONY: check-spell-%
 check-spell-%: cards/%.tex
-	if [ $$($(SPELL_CHECK) < $< | wc -l) -gt 0 ]; then \
-		echo "FAIL: $< spell check: $$( $(SPELL_CHECK) < $< )"; \
+	if [ $$($(SPELL_CHECK_CARD) < $< | wc -l) -gt 0 ]; then \
+		echo "FAIL: $< spell check: $$( $(SPELL_CHECK_CARD) < $< )"; \
 		false; \
 	fi
 
+check-spell-cards: $(patsubst %, check-spell-%, $(ALL_CARD_NAMES))
+	@echo SUCCESS $@
+
+SPELL_CHECK_MD=aspell --mode=markdown --home-dir=. --personal=jargon.txt list
+MD_TO_SPELLCHECK=CHANGELOG.md \
+CONTRIBUTING.md \
+CREDITS.md \
+GOVERNANCE.md \
+PRINTING.md \
+README.md \
+RELEASING.md \
+SECURITY.md
+
+check-spell-%: %
+	if [ $$($(SPELL_CHECK_MD) < $< | wc -l) -gt 0 ]; then \
+		echo "FAIL: $< spell check: $$( $(SPELL_CHECK_MD) < $< )"; \
+		false; \
+	fi
+
+.PHONY: check-spell-docs
+check-spell-docs: $(patsubst %, check-spell-%, $(MD_TO_SPELLCHECK))
+	@echo SUCCESS $@
+
 .PHONY: check-spell
-check-spell: $(patsubst %, check-spell-%, $(ALL_CARD_NAMES))
+check-spell: check-spell-docs check-spell-cards
 	@echo SUCCESS $@
 
 .PHONY: check
