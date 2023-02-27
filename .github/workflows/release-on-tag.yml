@@ -30,6 +30,8 @@ jobs:
           texlive-extra-utils
           fontconfig
           qpdf
+          aspell
+          aspell-en
       - name: install-fonts
         run: script/ensure-font.sh
       - name: make-release

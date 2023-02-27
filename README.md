@@ -41,7 +41,7 @@ Therefore, the [Foundation for Public Code](https://publiccode.net/) is committe
 
 1. Iterate on the cards and rules.
 2. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
-3. Script updateable box design
+3. Create box which can be updated from script
 
 ## Versioning
 
@@ -69,7 +69,7 @@ The Makefile automatically generates a complete card deck for the Governance Gam
 
 ```
 sudo apt install docbook-utils pandoc inkscape texlive texlive-fonts-extra \
-	texlive-extra-utils qpdf
+	texlive-extra-utils qpdf aspell aspell-en
 # sudo apt install texlive-full
 ```
 

@@ -256,8 +256,35 @@ check-pdfs: $(patsubst %, check-%.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 	fi
 	@echo SUCCESS $@
 
+.PHONY: check-spell-%
+check-spell-%: cards/%.tex
+	script/spell-check.sh $<
+
+check-spell-cards: $(patsubst %, check-spell-%, $(ALL_CARD_NAMES))
+	@echo SUCCESS $@
+
+MD_TO_SPELLCHECK=CHANGELOG.md \
+CONTRIBUTING.md \
+CREDITS.md \
+GOVERNANCE.md \
+PRINTING.md \
+README.md \
+RELEASING.md \
+SECURITY.md
+
+check-spell-%: %
+	script/spell-check.sh $<
+
+.PHONY: check-spell-docs
+check-spell-docs: $(patsubst %, check-spell-%, $(MD_TO_SPELLCHECK))
+	@echo SUCCESS $@
+
+.PHONY: check-spell
+check-spell: check-spell-docs check-spell-cards
+	@echo SUCCESS $@
+
 .PHONY: check
-check: check-pdfs script/find-missing-spdx.sh
+check: check-pdfs check-spell script/find-missing-spdx.sh
 	script/find-missing-spdx.sh
 	@echo SUCCESS $@
 
