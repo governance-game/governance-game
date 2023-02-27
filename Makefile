@@ -74,7 +74,8 @@ SCENARIO_CARD_NAMES=\
  scenario-localization-plugin \
  scenario-public-transport \
  scenario-recycling-station \
- scenario-wifi
+ scenario-wifi \
+ scenario-own-scenario
 
 STARTING_CARD_NAMES=\
  starting-state-1 \
@@ -83,8 +84,7 @@ STARTING_CARD_NAMES=\
  starting-state-4 \
  starting-state-5 \
  starting-state-6 \
- starting-state-7 \
- starting-state-8
+ starting-state-7
 
 ALL_CARD_NAMES=\
  $(RULES_CARD_NAMES) \
