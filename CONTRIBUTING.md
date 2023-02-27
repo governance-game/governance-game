@@ -43,6 +43,8 @@ When you've forked this repository, please make sure to create a feature branch 
 Add your changes in commits [with a message that explains them](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message).
 Document choices or decisions you make in the commit message as this will enable everyone to be informed of your choices in the future.
 
+Words which are not normally recognized by the spell-checker can be added to the `jargon.txt`.
+
 If you are adding code, make sure you've added and updated the relevant documentation and tests before you submit your pull request.
 Make sure to write tests that show the behavior of the newly added or changed code.
 

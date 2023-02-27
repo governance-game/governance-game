@@ -248,8 +248,20 @@ check-%.pdf: %.pdf
 check-pdfs: $(patsubst %, check-%.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 	@echo SUCCESS $@
 
+SPELL_CHECK=aspell --mode=tex --home-dir=. --personal=jargon.txt list
+.PHONY: check-spell-%
+check-spell-%: cards/%.tex
+	if [ $$($(SPELL_CHECK) < $< | wc -l) -gt 0 ]; then \
+		echo "FAIL: $< spell check: $$( $(SPELL_CHECK) < $< )"; \
+		false; \
+	fi
+
+.PHONY: check-spell
+check-spell: $(patsubst %, check-spell-%, $(ALL_CARD_NAMES))
+	@echo SUCCESS $@
+
 .PHONY: check
-check: check-pdfs script/find-missing-spdx.sh
+check: check-pdfs check-spell script/find-missing-spdx.sh
 	script/find-missing-spdx.sh
 	@echo SUCCESS $@
 
