@@ -6,7 +6,7 @@
 🙇‍♀️ Thank you for contributing!
 
 We love issues and pull requests from everyone.
-If you're not comfortable with Github, you can email use your feedback at <info@publiccode.net>.
+If you're not comfortable with GitHub, you can email use your feedback at <info@publiccode.net>.
 
 ## Problems, suggestions and questions in issues
 

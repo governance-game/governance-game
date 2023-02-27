@@ -23,7 +23,7 @@ The three options on the product page are for the quality of the paper, how many
 6. Press `WEITER`.
 7. Choose `ANDERES MOTIV`.
 8. Press `BILDER HOCHLADEN` to upload all the images from the `num-back` folder.
-9. Drag the images onto the cards on the left and be sure to match the right backside with the right cardnumber. Press `WEITER`.
+9. Drag the images onto the cards on the left and be sure to match the right backside with the right card number. Press `WEITER`.
 10. Press `WEITER`.
 11. Review that fronts and backs match, check the copyright box and press `ZUM EINKAUFSWAGEN`.
 12. Select shipping and payment to your needs and your done.

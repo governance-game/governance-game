@@ -19,8 +19,8 @@
     - [ ] Push branch, open a pull request to the 'main' branch
         - Request review
         - Reviewers will create issues for shortcomings found which would not prevent release
-        - If needed for release, reviewers may create PRs to resolve issues
-        - Re-request reviews if additional PRs are merged into release branch
+        - If needed for release, reviewers may create pull requests to resolve issues
+        - Re-request reviews if additional pull requests are merged into release branch
     - [ ] Once reviews are complete, merge to 'main'
 4. Create GitHub release with the release notes and version number
     - [ ] Switch to the 'main' branch, `git pull` and `git status`
