@@ -237,6 +237,7 @@ governance-game-numbered-$(VERSION).zip: \
 	rm -rf governance-game-numbered-$(VERSION)
 
 governance-game-box-$(VERSION).pdf: box/printers-studio-box.svg
+	sed -i -e's/version 0\.0\.0/version $(VERSION)/g' $<
 	inkscape --export-filename=$@ $<
 
 .PHONY: release
