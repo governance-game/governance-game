@@ -14,7 +14,7 @@
     - [ ] Update [`CHANGELOG.md`](../CHANGELOG.md)
     - [ ] Perform extra pass on diff to the 'main' branch
         - Run `make view-all`
-        - Ensure no cards runs over two pages
+        - Run `make check`
         - If needed, commit fixes and repeat extra pass
     - [ ] Push branch, open a pull request to the 'main' branch
         - Request review
