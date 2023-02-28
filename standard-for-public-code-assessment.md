@@ -45,13 +45,13 @@ Codebase modules SHOULD be documented in such a way as to enable reuse in codeba
 
 ## [Welcome contributors](https://standard.publiccode.net/criteria/open-to-contributions.html)
 
-- [ ] criterion met.
+- [x] criterion met.
 
 Requirement | meets | &nbsp;links&nbsp;and&nbsp;notes&nbsp;
 -----|-----|-----
 The [codebase](https://standard.publiccode.net/glossary.html#codebase) MUST allow anyone to submit suggestions for changes to the codebase. | yes |
 The codebase MUST include contribution guidelines explaining what kinds of contributions are welcome and how contributors can get involved, for example in a `CONTRIBUTING` file. | yes |
-The codebase MUST document the governance of the codebase, contributions and its community, for example in a `GOVERNANCE` file. |  |
+The codebase MUST document the governance of the codebase, contributions and its community, for example in a `GOVERNANCE` file. | yes |
 The codebase SHOULD advertise the committed engagement of involved organizations in the development and maintenance. | yes |
 The codebase SHOULD have a publicly available roadmap. | yes |
 The codebase SHOULD publish codebase activity statistics. | yes | [GitHub pulse](https://github.com/publiccodenet/governance-game/pulse)
@@ -59,24 +59,24 @@ Including a code of conduct for contributors in the codebase is OPTIONAL. | yes 
 
 ## [Make contributing easy](https://standard.publiccode.net/criteria/make-contributing-easy.html)
 
-- [ ] criterion met.
+- [x] criterion met.
 
 Requirement | meets | &nbsp;links&nbsp;and&nbsp;notes&nbsp;
 -----|-----|-----
 The [codebase](https://standard.publiccode.net/glossary.html#codebase) MUST have a public issue tracker that accepts suggestions from anyone. | yes |
-The codebase MUST include instructions for how to privately report security issues for responsible disclosure. |  |
+The codebase MUST include instructions for how to privately report security issues for responsible disclosure. | yes |
 The documentation MUST link to both the public issue tracker and submitted codebase changes, for example in a `README` file. | yes |
 The codebase MUST have communication channels for users and developers, for example email lists. | yes | [GitHub Discussions](https://github.com/publiccodenet/governance-game/discussions)
-The documentation SHOULD include instructions for how to report potentially security sensitive issues on a closed channel. |  |
+The documentation SHOULD include instructions for how to report potentially security sensitive issues on a closed channel. | yes |
 
 ## [Maintain version control](https://standard.publiccode.net/criteria/version-control-and-history.html)
 
-- [ ] criterion met.
+- [x] criterion met.
 
 Requirement | meets | &nbsp;links&nbsp;and&nbsp;notes&nbsp;
 -----|-----|-----
 The community MUST have a way to maintain [version control](https://standard.publiccode.net/glossary.html#version-control) for the [code](https://standard.publiccode.net/glossary.html#code). | yes |
-All files in the [codebase](https://standard.publiccode.net/glossary.html#codebase) MUST be version controlled. |  | The box is not yet in version control
+All files in the [codebase](https://standard.publiccode.net/glossary.html#codebase) MUST be version controlled. | yes |
 All decisions MUST be documented in commit messages. | yes | (since 1.0.0)
 Every commit message MUST link to discussions and issues wherever possible. | yes | since 1.0.0
 The codebase SHOULD be maintained in a distributed version control system. | yes |
@@ -113,18 +113,18 @@ Documenting the objectives of the codebase for the [general public](https://stan
 
 ## [Document the code](https://standard.publiccode.net/criteria/documenting.html)
 
-- [ ] criterion met.
+- [x] criterion met.
 
 Requirement | meets | &nbsp;links&nbsp;and&nbsp;notes&nbsp;
 -----|-----|-----
-All of the functionality of the [codebase](https://standard.publiccode.net/glossary.html#codebase), [policy](https://standard.publiccode.net/glossary.html#policy) as well as source, MUST be described in language clearly understandable for those that understand the purpose of the [code](https://standard.publiccode.net/glossary.html#code). |  |
+All of the functionality of the [codebase](https://standard.publiccode.net/glossary.html#codebase), [policy](https://standard.publiccode.net/glossary.html#policy) as well as source, MUST be described in language clearly understandable for those that understand the purpose of the [code](https://standard.publiccode.net/glossary.html#code). | yes |
 The documentation of the codebase MUST contain a description of how to install and run the source code. | yes |
 The documentation of the codebase MUST contain examples demonstrating the key functionality. | yes | video linked in README
 The documentation of the codebase SHOULD contain a high level description that is clearly understandable for a wide audience of stakeholders, like the [general public](https://standard.publiccode.net/glossary.html#general-public) and journalists. | yes |
 The documentation of the codebase SHOULD contain a section describing how to install and run a standalone version of the source code, including, if necessary, a test dataset. | yes |
 The documentation of the codebase SHOULD contain examples for all functionality. | yes | video and README
 The documentation SHOULD describe the key components or modules of the codebase and their relationships, for example as a high level architectural diagram. | n/a | There are .tex files and a Makefile, no architecture
-There SHOULD be [continuous integration](https://standard.publiccode.net/glossary.html#continuous-integration) tests for the quality of the documentation. |  |
+There SHOULD be [continuous integration](https://standard.publiccode.net/glossary.html#continuous-integration) tests for the quality of the documentation. | yes |
 Including examples that make users want to immediately start using the codebase in the documentation of the codebase is OPTIONAL. | yes |
 
 ## [Use plain English](https://standard.publiccode.net/criteria/understandable-english-first.html)
@@ -143,13 +143,13 @@ Providing a translation of any code, documentation or tests is OPTIONAL. |  |
 
 ## [Use open standards](https://standard.publiccode.net/criteria/open-standards.html)
 
-- [ ] criterion met.
+- [x] criterion met.
 
 Requirement | meets | &nbsp;links&nbsp;and&nbsp;notes&nbsp;
 -----|-----|-----
 For features of the [codebase](https://standard.publiccode.net/glossary.html#codebase) that facilitate the exchange of data the codebase MUST use an [open standard](https://standard.publiccode.net/glossary.html#open-standard) that meets the [Open Source Initiative Open Standard Requirements](https://opensource.org/osr). | n/a |
 Any non-open standards used MUST be recorded clearly as such in the documentation. | n/a |
-Any standard chosen for use within the codebase MUST be listed in the documentation with a link to where it is available. |  | (playing card format? Standard for Public Code?)
+Any standard chosen for use within the codebase MUST be listed in the documentation with a link to where it is available. | yes |
 Any non-open standards chosen for use within the codebase MUST NOT hinder collaboration and reuse. | n/a |
 If no existing open standard is available, effort SHOULD be put into developing one. | n/a |
 Open standards that are machine testable SHOULD be preferred over open standards that are not. | n/a |
@@ -157,23 +157,23 @@ Non-open standards that are machine testable SHOULD be preferred over non-open s
 
 ## [Use continuous integration](https://standard.publiccode.net/criteria/continuous-integration.html)
 
-- [ ] criterion met.
+- [x] criterion met.
 
 Requirement | meets | &nbsp;links&nbsp;and&nbsp;notes&nbsp;
 -----|-----|-----
-All functionality in the source [code](https://standard.publiccode.net/glossary.html#code) MUST have automated tests. |  |
-Contributions MUST pass all automated tests before they are admitted into the [codebase](https://standard.publiccode.net/glossary.html#codebase). |  |
+All functionality in the source [code](https://standard.publiccode.net/glossary.html#code) MUST have automated tests. | yes | Tests cover .pdf creation and page count
+Contributions MUST pass all automated tests before they are admitted into the [codebase](https://standard.publiccode.net/glossary.html#codebase). | yes |
 The codebase MUST have guidelines explaining how to structure contributions. | yes |
 The codebase MUST have active contributors who can review contributions. | yes |
-The codebase guidelines SHOULD state that each contribution should focus on a single issue. |  |
-Source code test and documentation coverage SHOULD be monitored. |  |
+The codebase guidelines SHOULD state that each contribution should focus on a single issue. | yes |
+Source code test and documentation coverage SHOULD be monitored. | n/a | The only code in the repository is test code, the workflow, and the Makefile
 Testing [policy](https://standard.publiccode.net/glossary.html#policy) and documentation for consistency with the source and vice versa is OPTIONAL. | n/a |
 Testing policy and documentation for style and broken links is OPTIONAL. |  |
 Testing the code by using examples in the documentation is OPTIONAL. |  |
 
 ## [Publish with an open license](https://standard.publiccode.net/criteria/open-licenses.html)
 
-- [ ] criterion met.
+- [x] criterion met.
 
 Requirement | meets | &nbsp;links&nbsp;and&nbsp;notes&nbsp;
 -----|-----|-----
@@ -181,7 +181,7 @@ All [code](https://standard.publiccode.net/glossary.html#code) and documentation
 Software source code MUST be licensed under an [OSI-approved or FSF Free/Libre license](https://spdx.org/licenses/). | yes | CC0 1.0
 All code MUST be published with a license file. | yes |
 Contributors MUST NOT be required to transfer copyright of their contributions to the [codebase](https://standard.publiccode.net/glossary.html#codebase). | yes |
-All source code files in the codebase SHOULD include a copyright notice and a license header that are machine-readable. |  |
+All source code files in the codebase SHOULD include a copyright notice and a license header that are machine-readable. | yes |
 Having multiple licenses for different types of code and documentation is OPTIONAL. |  |
 
 ## [Make the codebase findable](https://standard.publiccode.net/criteria/findability.html)
@@ -194,9 +194,9 @@ The [codebase](https://standard.publiccode.net/glossary.html#codebase) MUST be f
 The codebase MUST be findable using a search engine by codebase name. | yes |
 The name of the codebase SHOULD be descriptive and free from acronyms, abbreviations, puns or organizational branding. | yes |
 Maintainers SHOULD submit the codebase to relevant software catalogs. |  |
-The codebase SHOULD have a website which describes the problem the codebase solves using the preferred jargon of different potential users of the codebase (including technologists, policy experts and managers). |  |
+The codebase SHOULD have a website which describes the problem the codebase solves using the preferred jargon of different potential users of the codebase (including technologists, policy experts and managers). | yes |
 The codebase SHOULD have a unique and persistent identifier where the entry mentions the major contributors, [repository](https://standard.publiccode.net/glossary.html#repository) location and website. |  |
-The codebase SHOULD include a machine-readable metadata description, for example in a [publiccode.yml](https://github.com/publiccodeyml/publiccode.yml) file. |  |
+The codebase SHOULD include a machine-readable metadata description, for example in a [publiccode.yml](https://github.com/publiccodeyml/publiccode.yml) file. | yes |
 A dedicated domain name for the codebase is OPTIONAL. |  |
 Regular presentations at conferences by the community are OPTIONAL. |  |
 
