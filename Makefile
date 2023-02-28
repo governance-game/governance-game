@@ -228,7 +228,7 @@ governance-game-$(VERSION).zip: governance-game-$(VERSION).tar.xz
 
 governance-game-numbered-$(VERSION).tar.xz: number-pdfs
 	tar --transform='s@\(.*\)@governance-game-numbered-$(VERSION)/\1@g' \
-		-cvJf $@ $^
+		-cvJf $@ num-front num-back
 
 governance-game-numbered-$(VERSION).zip: \
 		governance-game-numbered-$(VERSION).tar.xz
