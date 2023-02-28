@@ -3,6 +3,14 @@
 <!-- SPDX-License-Identifier: CC0-1.0 -->
 <!-- SPDX-FileCopyrightText: 2020-2023 The Foundation for Public Code <info@publiccode.net> -->
 
+## Version 1.0.2
+
+* Added "Your own scenario" card.
+* Removed a nearly redundant starting state card.
+* Fixed typos.
+* Added deck box, with version number.
+* Added continuous integration checks.
+
 ## Version 1.0.1
 
 * Added "Standard for Public Code" card.

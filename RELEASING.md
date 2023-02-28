@@ -6,10 +6,10 @@
     - Ensure all changes intended for release are merged
     - Invite a proofread of the current state of the branch
 2. Create a release branch
-    - From 'develop', `git checkout -b "release-$MAJOR.$MINOR.$PATCH"`
+    - From 'develop', `git switch -c "release-$MAJOR.$MINOR.$PATCH"`
     - Push the branch, `git push -u origin release-$MAJOR.$MINOR.$PATCH`
 3. Update the new release
-    - [ ] Update version number in `rules-about-tex`
+    - [ ] Update version number in `cards/rules-about.tex`
     - [ ] Update [`AUTHORS.md`](../AUTHORS.md) with new contributors
     - [ ] Update [`CHANGELOG.md`](../CHANGELOG.md)
     - [ ] Perform extra pass on diff to the 'main' branch
