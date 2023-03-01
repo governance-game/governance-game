@@ -3,7 +3,7 @@
 <!-- SPDX-License-Identifier: CC0-1.0 -->
 <!-- SPDX-FileCopyrightText: 2019-2023 The Foundation for Public Code <info@publiccode.net> -->
 
-![version 1.0.1](https://img.shields.io/badge/version-1.0.1-gree.svg)
+![version 1.0.2](https://img.shields.io/badge/version-1.0.2-gree.svg)
 [![release-on-tag](https://github.com/publiccodenet/governance-game/actions/workflows/release-on-tag.yml/badge.svg)](https://github.com/publiccodenet/governance-game/actions/workflows/release-on-tag.yml)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
@@ -39,9 +39,7 @@ Therefore, the [Foundation for Public Code](https://publiccode.net/) is committe
 
 ## Roadmap
 
-1. Iterate on the cards and rules.
-2. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
-3. Create box which can be updated from script
+1. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
 
 ## Versioning
 
