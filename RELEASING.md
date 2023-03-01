@@ -9,7 +9,7 @@
     - From 'develop', `git switch -c "release-$MAJOR.$MINOR.$PATCH"`
     - Push the branch, `git push -u origin release-$MAJOR.$MINOR.$PATCH`
 3. Update the new release
-    - [ ] Update version number in `cards/rules-about.tex`
+    - [ ] Update version number in `cards/rules-about.tex` and `README.md`
     - [ ] Update [`AUTHORS.md`](../AUTHORS.md) with new contributors
     - [ ] Update [`CHANGELOG.md`](../CHANGELOG.md)
     - [ ] Perform extra pass on diff to the 'main' branch
