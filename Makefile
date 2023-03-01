@@ -172,6 +172,10 @@ MD_TO_SPELLCHECK=\
  RELEASING.md \
  SECURITY.md
 
+NUMBERED_PDFS:=$(shell for NUM in $$(seq 1 54); do \
+	echo num-front/$$NUM.pdf num-back/$$NUM.pdf; \
+	done)
+
 .PHONY: pdfs
 # depends on .pdf files for all card-fronts and card-backs
 pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
@@ -209,9 +213,15 @@ starting-%.pdf: cards/starting-%.tex templates/starting-template.tex
 #######################################################################
 # For printing, we export matching PDFs by number in the num-front/ and
 # the num-back/ directories
+num-front/%.pdf: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
+	script/number-pdf.sh $@ $^
+
+num-back/%.pdf: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
+	script/number-pdf.sh $@ $^
+
 .PHONY: number-pdfs
-number-pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
-	script/number-pdfs.sh $^
+number-pdfs: $(NUMBERED_PDFS)
+	ls num-front/* num-back/*
 
 #######################################################################
 # release files (.tar, .zip, and box.pdf)
