@@ -15,6 +15,10 @@ IGNORE_PATTERN='\.svg\|\.jpg\|LICENSE\|jargon.txt'
 
 MISSING=0
 for FILE in $(git_list_files | grep --invert-match $IGNORE_PATTERN); do
+	if ! [ -e $FILE ]; then
+		echo "$FILE no longer exists"
+		continue
+	fi
 	if ! grep --quiet SPDX-License-Identifier $FILE; then
 		MISSING=$(( 1 + $MISSING ))
 		echo $FILE
