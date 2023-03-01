@@ -29,6 +29,9 @@ jobs:
           texlive-fonts-extra
           texlive-extra-utils
           fontconfig
+          qpdf
+          aspell
+          aspell-en
       - name: install-fonts
         run: script/ensure-font.sh
       - name: make-release
@@ -38,8 +41,9 @@ jobs:
       - name: upload
         uses: softprops/action-gh-release@v1
         with:
-          prerelease: true
+          prerelease: false
           files: |
             governance-game-*.tar.xz
+            governance-game-box-*.pdf
             governance-game-*.zip
           body_path: release.body

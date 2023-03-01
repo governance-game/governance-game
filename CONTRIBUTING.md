@@ -1,15 +1,19 @@
 # Contributing to this game
 
+<!-- SPDX-License-Identifier: CC0-1.0 -->
+<!-- SPDX-FileCopyrightText: 2019-2023 The Foundation for Public Code <info@publiccode.net> -->
+
 🙇‍♀️ Thank you for contributing!
 
 We love issues and pull requests from everyone.
-If you're not comfortable with Github, you can email use your feedback at <info@publiccode.net>.
+If you're not comfortable with GitHub, you can email use your feedback at <info@publiccode.net>.
 
 ## Problems, suggestions and questions in issues
 
 Please help development by reporting problems, suggesting changes and asking questions.
 To do this, you can [create a GitHub issue](https://help.github.com/articles/creating-an-issue/) for this project in the [GitHub Issues for the Governance Game](https://github.com/publiccodenet/governance-game/issues).
 Ideas for new calamities and scenarios are especially welcome.
+Note: do **not** create public issues for security-related issues, instead, see how to [report security issues](SECURITY.md).
 
 You don't need to change any of our code or documentation to be a contributor!
 
@@ -19,8 +23,17 @@ To add to the documentation or code of one of our projects, make a pull request.
 
 If you've never used GitHub, get up to speed with [Understanding the GitHub flow](https://guides.github.com/introduction/flow/) or follow one of the great free interactive courses in the [GitHub learning lab](https://lab.github.com/) on working with GitHub and Markdown, the syntax this project's documentation is in.
 
+### 0. Expectations
+
+#### Licensing
+
 This project is [licensed CC 0](LICENSE).
 By contributing you agree to release all your contributions to it under the same license.
+
+#### Standards
+
+Contributions should follow the requirements set out in the criteria of the [Standard for Public code](https://standard.publiccode.net/).
+Reviewers will also be ensuring that contributions are aligned with the [values of public code](https://standard.publiccode.net/introduction.html#values-of-public-code).
 
 ### 1. Make your changes
 
@@ -29,6 +42,8 @@ When you've forked this repository, please make sure to create a feature branch 
 
 Add your changes in commits [with a message that explains them](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message).
 Document choices or decisions you make in the commit message as this will enable everyone to be informed of your choices in the future.
+
+Words which are not normally recognized by the spell-checker can be added to the `jargon.txt`.
 
 If you are adding code, make sure you've added and updated the relevant documentation and tests before you submit your pull request.
 Make sure to write tests that show the behavior of the newly added or changed code.
@@ -50,6 +65,8 @@ After successfully printing a deck through a new service, please document that p
 ### 2. Pull request
 
 When submitting the pull request, please include a description of the problem you are trying to solve and the issue numbers that this pull request will fix.
+It is preferred for each pull request to address a single issue where possible.
+In some cases a single set of changes may address multiple issues, in which case be sure to list all issue numbers fixed.
 
 ### 3. Improve
 

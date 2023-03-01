@@ -1,5 +1,12 @@
 # Governance Game
 
+<!-- SPDX-License-Identifier: CC0-1.0 -->
+<!-- SPDX-FileCopyrightText: 2019-2023 The Foundation for Public Code <info@publiccode.net> -->
+
+![version 1.0.2](https://img.shields.io/badge/version-1.0.2-gree.svg)
+[![release-on-tag](https://github.com/publiccodenet/governance-game/actions/workflows/release-on-tag.yml/badge.svg)](https://github.com/publiccodenet/governance-game/actions/workflows/release-on-tag.yml)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+
 [![Introduction video to the game](images/video-preview.jpg)](https://www.youtube.com/watch?v=Dt0WFla4eeM)
 
 This is a game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html).
@@ -26,11 +33,13 @@ Please read [CONTRIBUTING](CONTRIBUTING.md) for our process for submitting issue
 Also take a look at our [Code of Conduct](CODE_OF_CONDUCT.md).
 We want this to be an inclusive and welcoming community.
 
+It is the intent of the Governance Game development community to develop the game collaboratively.
+Adhering to the criteria set forth in the [Standard for Public Code](https://standard.publiccode.net/) gives us confidence in the process.
+Therefore, the [Foundation for Public Code](https://publiccode.net/) is committed to maintaining and developing the Governance Game at a level of quality that meets the Standard for Public Code.
+
 ## Roadmap
 
-1. Iterate on the cards and rules.
-2. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
-3. Script updateable box design
+1. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
 
 ## Versioning
 
@@ -58,7 +67,7 @@ The Makefile automatically generates a complete card deck for the Governance Gam
 
 ```
 sudo apt install docbook-utils pandoc inkscape texlive texlive-fonts-extra \
-	texlive-extra-utils
+	texlive-extra-utils qpdf aspell aspell-en
 # sudo apt install texlive-full
 ```
 

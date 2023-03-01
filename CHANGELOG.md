@@ -1,5 +1,16 @@
 # Version history
 
+<!-- SPDX-License-Identifier: CC0-1.0 -->
+<!-- SPDX-FileCopyrightText: 2020-2023 The Foundation for Public Code <info@publiccode.net> -->
+
+## Version 1.0.2
+
+* Added "Your own scenario" card.
+* Removed a nearly redundant starting state card.
+* Fixed typos.
+* Added deck box, with version number.
+* Added continuous integration checks.
+
 ## Version 1.0.1
 
 * Added "Standard for Public Code" card.
@@ -22,7 +33,7 @@
 * Decks are now generated programmatically.
 * Added instructions for how to add a new card.
 * Added instructions on how to get a deck printed professionally, see [blog post](https://blog.publiccode.net/news/2022/09/15/printing-your-own-governance-game.html).
-* Copyedit of text.
+* Copy-edit of text.
 
 ## Version 0.3.0
 
@@ -33,7 +44,7 @@ November 27th 2019: 🌠 made the small changes for it to be ready to print.
 
 ## Version 0.2.1
 
-November 13th 2019: 🧹 small update after playtesting.
+November 13th 2019: 🧹 small update after play-testing.
 
 * Removed a duplicate card.
 * Added styling where scenarios referred to adding other cards.
