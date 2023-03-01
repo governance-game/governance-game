@@ -23,10 +23,14 @@
         - Re-request reviews if additional pull requests are merged into release branch
     - [ ] Once reviews are complete, merge to 'main'
 4. Create GitHub release with the release notes and version number
+    - [ ] Wait for tests to "go green" on GitHub for the main branch
     - [ ] Switch to the 'main' branch, `git pull` and `git status`
     - [ ] `git tag $MAJOR.$MINOR.$PATCH`
     - [ ] `git push --tags`
         - This should generate the release, with changelog bullets
-    - [ ] Add box design to the release
 5. Update 'develop' with a merge from 'main'
-6. [Send the files for print to the printer](PRINTING.md)
+6. Rebuild the GitHub Pages
+    - [ ] Navigate to the [GitHub action](https://github.com/publiccodenet/governance-game/actions/workflows/pages/pages-build-deployment)
+        - Select the latest run
+        - Click "Re-run all jobs"
+7. [Send the files for print to the printer](PRINTING.md)
