@@ -236,9 +236,11 @@ governance-game-numbered-$(VERSION).zip: \
 	zip -r $@ governance-game-numbered-$(VERSION)
 	rm -rf governance-game-numbered-$(VERSION)
 
-governance-game-box-$(VERSION).pdf: box/printers-studio-box.svg
-	sed -i -e's/version 0\.0\.0/version $(VERSION)/g' $<
-	inkscape --export-filename=$@ $<
+governance-game-box-$(VERSION).pdf: box/printers-studio-box-0.0.0.svg
+	cp -v box/printers-studio-box-0.0.0.svg printers-studio-box.svg
+	sed -i -e's/version 0\.0\.0/version $(VERSION)/g' \
+		printers-studio-box.svg
+	inkscape --export-filename=$@ printers-studio-box.svg
 
 .PHONY: release
 release: governance-game-$(VERSION).tar.xz \
@@ -288,8 +290,12 @@ check-spell-docs: $(patsubst %, check-spell-%, $(MD_TO_SPELLCHECK))
 check-spell: check-spell-docs check-spell-cards
 	@echo SUCCESS $@
 
+.PHONY: check-release
+check-release: release
+	@echo SUCCESS $@
+
 .PHONY: check
-check: check-pdfs check-spell script/find-missing-spdx.sh
+check: check-pdfs check-spell script/find-missing-spdx.sh check-release
 	script/find-missing-spdx.sh
 	@echo SUCCESS $@
 

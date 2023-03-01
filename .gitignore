@@ -11,6 +11,7 @@ svg-inkscape/
 num-front/
 num-back/
 release.body
+printers-studio-box.svg
 
 # from gh-pages branch
 Gemfile.lock
