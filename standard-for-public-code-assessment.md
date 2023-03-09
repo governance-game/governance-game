@@ -193,7 +193,7 @@ Requirement | meets | &nbsp;links&nbsp;and&nbsp;notes&nbsp;
 The [codebase](https://standard.publiccode.net/glossary.html#codebase) MUST be findable using a search engine by describing the problem it solves in natural language. |  |
 The codebase MUST be findable using a search engine by codebase name. | yes |
 The name of the codebase SHOULD be descriptive and free from acronyms, abbreviations, puns or organizational branding. | yes |
-Maintainers SHOULD submit the codebase to relevant software catalogs. |  |
+Maintainers SHOULD submit the codebase to relevant software catalogs. | yes | [Civic Tech Field Guide](https://directory.civictech.guide/listing/governance-game)
 The codebase SHOULD have a website which describes the problem the codebase solves using the preferred jargon of different potential users of the codebase (including technologists, policy experts and managers). | yes |
 The codebase SHOULD have a unique and persistent identifier where the entry mentions the major contributors, [repository](https://standard.publiccode.net/glossary.html#repository) location and website. |  |
 The codebase SHOULD include a machine-readable metadata description, for example in a [publiccode.yml](https://github.com/publiccodeyml/publiccode.yml) file. | yes |
