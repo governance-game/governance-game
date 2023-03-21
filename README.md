@@ -85,6 +85,10 @@ Type `make` to generate the PDF files.
 
 Type `make view-all` to view all of the PDF files generated.
 
+## Website
+
+The website is built from the `gh-pages` branch.
+
 ## License
 
 This project is licensed under the CC 0 License, see the [LICENSE](LICENSE) file for details.
