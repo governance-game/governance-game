@@ -17,6 +17,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: update-deps
+        run: sudo apt-get update
+      - name: upgrade-deps
+        run: sudo apt-get upgrade -y
       - name: install-deps
         # https://yaml.org/spec/1.2.2/#65-line-folding
         run: >
