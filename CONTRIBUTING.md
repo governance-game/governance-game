@@ -21,6 +21,8 @@ You don't need to change any of our code or documentation to be a contributor!
 
 To add to the documentation or code of one of our projects, make a pull request.
 
+The Foundation for Public Code has committed to make sure that maintainers are available to review contributions with an aim to provide feedback within two business days.
+
 If you've never used GitHub, get up to speed with [Understanding the GitHub flow](https://guides.github.com/introduction/flow/) or follow one of the great free interactive courses in the [GitHub learning lab](https://lab.github.com/) on working with GitHub and Markdown, the syntax this project's documentation is in.
 
 ### 0. Expectations
