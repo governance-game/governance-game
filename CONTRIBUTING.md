@@ -47,8 +47,8 @@ Document choices or decisions you make in the commit message as this will enable
 
 Words which are not normally recognized by the spell-checker can be added to the `jargon.txt`.
 
-If you are adding code, make sure you've added and updated the relevant documentation and tests before you submit your pull request.
-Make sure to write tests that show the behavior of the newly added or changed code.
+If you are adding or changing code, including the `Makefile`, make sure you've added and updated the relevant documentation and tests before you submit your pull request.
+Make sure the tests show the behavior of the newly added or changed code.
 
 #### Adding a new card
 
@@ -64,6 +64,15 @@ After successfully printing a deck through a new service, please document that p
 1. Modify the [Makefile](Makefile) to generate cards to the specifications required for the printer.
 2. Add a new section in [PRINTING.md](PRINTING.md) with a heading name of the printing service/company with the country in parentheses. This section should explain what arguments to use when calling `make` and what files are generated, include a link to the product page or similar and roughly explain the process for placing an order. Any extra comments, or known problems, that help someone use that service are welcome.
 
+#### Style and standards
+
+Card content should be general enough to apply to modeling collaboration in many contexts of public code codebases, rather than specific to any narrow group.
+
+Text should aim for plain English with American English spelling.
+Text should aim for a lower secondary education reading level, thus aligning to the [Web Content Accessibility Guidelines 2](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=315#readable) recommendation.
+
+Where possible, choose text rather than binary file formats, for example the `assets` directory contains human readable Scalable Vector Graphics (`.svg`) files rather than binary images.
+
 ### 2. Pull request
 
 When submitting the pull request, please include a description of the problem you are trying to solve and the issue numbers that this pull request will fix.
@@ -73,6 +82,7 @@ In some cases a single set of changes may address multiple issues, in which case
 ### 3. Improve
 
 All contributions have to be reviewed by someone.
+Reviewers will help you ensure that the content of the contribution aligns with Style and standards.
 
 It could be that your contribution can be merged immediately by a maintainer.
 However, usually, a new pull request needs some improvements before it can be merged.
