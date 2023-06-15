@@ -34,7 +34,6 @@ By [Grégory Montigny](https://thenounproject.com/simpleicon):
 
 By [Aman](https://thenounproject.com/amanmana):
 
-* [hosting connections](https://thenounproject.com/term/hosting-connections/1735012)
 * [server technical](https://thenounproject.com/term/server-technical/1735015)
 * [web coding](https://thenounproject.com/term/web-coding/1734983)
 
