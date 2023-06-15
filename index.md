@@ -21,6 +21,10 @@ For the actual rules, see the rules cards.
 
 If you want to use the game in a workshop or online, see [our workshop guide](https://about.publiccode.net/activities/supporting-codebase-governance/game/run-governance-game-workshop.html).
 
-## GitHub repository
+## Development
+
+[Version history](CHANGELOG.md)
+
+### GitHub repository
 
 [github.com/publiccodenet/governance-game/](https://github.com/publiccodenet/governance-game/)
