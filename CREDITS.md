@@ -28,7 +28,7 @@ By [Grégory Montigny](https://thenounproject.com/simpleicon):
 * [Judge](https://thenounproject.com/term/judge/1974854)
 * [Mechanic](https://thenounproject.com/term/mechanic/1974846)
 * [mover](https://thenounproject.com/term/mover/1974883)
-* [notebook](noun-notebook-1840555)
+* [notebook](https://thenounproject.com/term/notebook/1840555)
 * [operator](https://thenounproject.com/term/operator/1974933)
 * [secretary](https://thenounproject.com/term/secretary/1974852)
 
