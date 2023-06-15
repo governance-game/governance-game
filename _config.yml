@@ -7,6 +7,7 @@ version: 1.0.2
 remote_theme: publiccodenet/jekyll-theme
 include:
   - "index.md"
+  - "CHANGELOG.md"
 
 toc: false
 
