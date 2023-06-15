@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2023 The Foundation for Public Code <info@publiccode.net>
 
 title: The Governance Game
-version: 1.0.1
+version: 1.0.2
 
 remote_theme: publiccodenet/jekyll-theme
 include:
