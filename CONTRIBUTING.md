@@ -68,6 +68,8 @@ After successfully printing a deck through a new service, please document that p
 
 #### Style and standards
 
+Due to the playing card format, the amount of text must be small enough to fit on a single card without changing the font size.
+
 Card content should be general enough to apply to modeling collaboration in many contexts of public code codebases, rather than specific to any narrow group.
 
 Text should aim for plain English with American English spelling.
