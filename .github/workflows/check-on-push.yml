@@ -36,6 +36,6 @@ jobs:
           aspell
           aspell-en
       - name: install-fonts
-        run: script/ensure-font.sh
+        run: make ensure-font
       - name: make-check
         run: make check
