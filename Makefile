@@ -264,8 +264,8 @@ release: governance-game-$(VERSION).tar.xz \
 # Without the correct fonts installed, the text may look poor or flow
 # differently
 .PHONY: ensure-font
-ensure-font: scripts/ensure-font.sh
-	scripts/ensure-font.sh
+ensure-font: script/ensure-font.sh
+	script/ensure-font.sh
 
 #######################################################################
 # tests
