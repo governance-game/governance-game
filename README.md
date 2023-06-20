@@ -41,7 +41,13 @@ Therefore, the [Foundation for Public Code](https://publiccode.net/) is committe
 
 ## Roadmap
 
+### Near term
+
 1. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
+
+### Longer term
+
+1. Allow for multiple target groups of the game, [discussion #147](https://github.com/publiccodenet/governance-game/discussions/147)
 
 ## Versioning
 
