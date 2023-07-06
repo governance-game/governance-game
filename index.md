@@ -17,6 +17,8 @@ You need a few people to play with you.
 There is no strict number, but you all need to be able to see and reach the cards on the table.
 For the actual rules, see the rules cards.
 
+A longer explanation of the game can be found in [this video presentation](https://bbb.opencloud.lu/playback/video/e1d2665ed6d4ad3a07f23e5a3638fe49dc3a95b8-1686902873481/) (game part starting at 25:44, [accompanying slides](https://files.publiccode.net/nextcloud/index.php/s/govgameintro)).
+
 ![A picture of the cards in the game on a table](images/cards-640px.jpg)
 
 If you want to use the game in a workshop or online, see [our workshop guide](https://about.publiccode.net/activities/supporting-codebase-governance/game/run-governance-game-workshop.html).
