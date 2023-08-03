@@ -3,6 +3,12 @@
 <!-- SPDX-License-Identifier: CC0-1.0 -->
 <!-- SPDX-FileCopyrightText: 2020-2023 The Foundation for Public Code <info@publiccode.net> -->
 
+## Version 1.0.3
+
+* Changed background on Object cards to a unique color.
+* Corrected credits card.
+* Improved documentation and automation.
+
 ## Version 1.0.2
 
 * Added "Your own scenario" card.
