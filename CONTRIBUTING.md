@@ -21,6 +21,8 @@ You don't need to change any of our code or documentation to be a contributor!
 
 To add to the documentation or code of one of our projects, make a pull request.
 
+The Foundation for Public Code has committed to make sure that maintainers are available to review contributions with an aim to provide feedback within two business days.
+
 If you've never used GitHub, get up to speed with [Understanding the GitHub flow](https://guides.github.com/introduction/flow/) or follow one of the great free interactive courses in the [GitHub learning lab](https://lab.github.com/) on working with GitHub and Markdown, the syntax this project's documentation is in.
 
 ### 0. Expectations
@@ -42,11 +44,13 @@ When you've forked this repository, please make sure to create a feature branch 
 
 Add your changes in commits [with a message that explains them](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message).
 Document choices or decisions you make in the commit message as this will enable everyone to be informed of your choices in the future.
+If more than one type of change is needed, group logically related changes into separate commits.
+For example, white-space fixes could be a separate commit from text content changes.
 
 Words which are not normally recognized by the spell-checker can be added to the `jargon.txt`.
 
-If you are adding code, make sure you've added and updated the relevant documentation and tests before you submit your pull request.
-Make sure to write tests that show the behavior of the newly added or changed code.
+If you are adding or changing code, including the `Makefile`, make sure you've added and updated the relevant documentation and tests before you submit your pull request.
+Make sure the tests show the behavior of the newly added or changed code.
 
 #### Adding a new card
 
@@ -62,6 +66,17 @@ After successfully printing a deck through a new service, please document that p
 1. Modify the [Makefile](Makefile) to generate cards to the specifications required for the printer.
 2. Add a new section in [PRINTING.md](PRINTING.md) with a heading name of the printing service/company with the country in parentheses. This section should explain what arguments to use when calling `make` and what files are generated, include a link to the product page or similar and roughly explain the process for placing an order. Any extra comments, or known problems, that help someone use that service are welcome.
 
+#### Style and standards
+
+Due to the playing card format, the amount of text must be small enough to fit on a single card without changing the font size.
+
+Card content should be general enough to apply to modeling collaboration in many contexts of public code codebases, rather than specific to any narrow group.
+
+Text should aim for plain English with American English spelling.
+Text should aim for a lower secondary education reading level, thus aligning to the [Web Content Accessibility Guidelines 2](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=315#readable) recommendation.
+
+Where possible, choose text rather than binary file formats, for example the `assets` directory contains human readable Scalable Vector Graphics (`.svg`) files rather than binary images.
+
 ### 2. Pull request
 
 When submitting the pull request, please include a description of the problem you are trying to solve and the issue numbers that this pull request will fix.
@@ -71,6 +86,7 @@ In some cases a single set of changes may address multiple issues, in which case
 ### 3. Improve
 
 All contributions have to be reviewed by someone.
+Reviewers will help you ensure that the content of the contribution aligns with Style and standards.
 
 It could be that your contribution can be merged immediately by a maintainer.
 However, usually, a new pull request needs some improvements before it can be merged.

@@ -28,15 +28,19 @@ By [Grégory Montigny](https://thenounproject.com/simpleicon):
 * [Judge](https://thenounproject.com/term/judge/1974854)
 * [Mechanic](https://thenounproject.com/term/mechanic/1974846)
 * [mover](https://thenounproject.com/term/mover/1974883)
-* [notebook](noun-notebook-1840555)
+* [notebook](https://thenounproject.com/term/notebook/1840555)
 * [operator](https://thenounproject.com/term/operator/1974933)
 * [secretary](https://thenounproject.com/term/secretary/1974852)
 
 By [Aman](https://thenounproject.com/amanmana):
 
-* [hosting connections](https://thenounproject.com/term/hosting-connections/1735012)
 * [server technical](https://thenounproject.com/term/server-technical/1735015)
 * [web coding](https://thenounproject.com/term/web-coding/1734983)
+
+By [mynamepong](https://thenounproject.com/mynamepong/)
+
+* [testing](https://thenounproject.com/term/testing/2209188)
+* [developer](https://thenounproject.com/term/developer/2209170)
 
 By [Shastry](https://thenounproject.com/kiran.s1507):
 

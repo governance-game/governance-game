@@ -172,6 +172,10 @@ MD_TO_SPELLCHECK=\
  RELEASING.md \
  SECURITY.md
 
+NUMBERED_PDFS:=$(shell for NUM in $$(seq 1 54); do \
+	echo num-front/$$NUM.pdf num-back/$$NUM.pdf; \
+	done)
+
 .PHONY: pdfs
 # depends on .pdf files for all card-fronts and card-backs
 pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
@@ -209,9 +213,15 @@ starting-%.pdf: cards/starting-%.tex templates/starting-template.tex
 #######################################################################
 # For printing, we export matching PDFs by number in the num-front/ and
 # the num-back/ directories
+num-front/%.pdf: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
+	script/number-pdf.sh $@ $^
+
+num-back/%.pdf: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
+	script/number-pdf.sh $@ $^
+
 .PHONY: number-pdfs
-number-pdfs: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
-	script/number-pdfs.sh $^
+number-pdfs: $(NUMBERED_PDFS)
+	ls num-front/* num-back/*
 
 #######################################################################
 # release files (.tar, .zip, and box.pdf)
@@ -236,9 +246,11 @@ governance-game-numbered-$(VERSION).zip: \
 	zip -r $@ governance-game-numbered-$(VERSION)
 	rm -rf governance-game-numbered-$(VERSION)
 
-governance-game-box-$(VERSION).pdf: box/printers-studio-box.svg
-	sed -i -e's/version 0\.0\.0/version $(VERSION)/g' $<
-	inkscape --export-filename=$@ $<
+governance-game-box-$(VERSION).pdf: box/printers-studio-box-0.0.0.svg
+	cp -v box/printers-studio-box-0.0.0.svg printers-studio-box.svg
+	sed -i -e's/version 0\.0\.0/version $(VERSION)/g' \
+		printers-studio-box.svg
+	inkscape --export-filename=$@ printers-studio-box.svg
 
 .PHONY: release
 release: governance-game-$(VERSION).tar.xz \
@@ -252,8 +264,8 @@ release: governance-game-$(VERSION).tar.xz \
 # Without the correct fonts installed, the text may look poor or flow
 # differently
 .PHONY: ensure-font
-ensure-font: scripts/ensure-font.sh
-	scripts/ensure-font.sh
+ensure-font: script/ensure-font.sh
+	script/ensure-font.sh
 
 #######################################################################
 # tests
@@ -288,8 +300,12 @@ check-spell-docs: $(patsubst %, check-spell-%, $(MD_TO_SPELLCHECK))
 check-spell: check-spell-docs check-spell-cards
 	@echo SUCCESS $@
 
+.PHONY: check-release
+check-release: release
+	@echo SUCCESS $@
+
 .PHONY: check
-check: check-pdfs check-spell script/find-missing-spdx.sh
+check: check-pdfs check-spell script/find-missing-spdx.sh check-release
 	script/find-missing-spdx.sh
 	@echo SUCCESS $@
 

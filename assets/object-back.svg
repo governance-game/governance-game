@@ -56,7 +56,7 @@
     <rect
        style="stroke-width:0.191891"
        id="rect4852"
-       fill="#5b57ca"
+       fill="#ff6666"
        height="94"
        width="69.099998"
        x="0"
@@ -68,7 +68,7 @@
          cx="14.724881"
          cy="24.431786"
          r="3.9485714"
-         fill="#ff9999"
+         fill="#5b57ca"
          id="circle4854"
          style="stroke-width:0.164524" />
       <circle
@@ -306,7 +306,7 @@
          cx="54.210594"
          cy="17.68631"
          r="4.1953573"
-         fill="#fff500"
+         fill="#5b57ca"
          id="circle4922"
          style="stroke-width:0.164524" />
       <line

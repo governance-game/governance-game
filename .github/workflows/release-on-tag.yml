@@ -17,6 +17,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: update-deps
+        run: sudo apt-get update
+      - name: upgrade-deps
+        run: sudo apt-get upgrade -y
       - name: install-deps
         # https://yaml.org/spec/1.2.2/#65-line-folding
         run: >
@@ -33,7 +37,7 @@ jobs:
           aspell
           aspell-en
       - name: install-fonts
-        run: script/ensure-font.sh
+        run: make ensure-font
       - name: make-release
         run: make release
       - name: create-release-body
