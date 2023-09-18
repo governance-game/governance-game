@@ -9,7 +9,10 @@
 *.xz
 svg-inkscape/
 num-front/
+num-front-png/
+num-front-vector/
 num-back/
+num-back-png/
 release.body
 printers-studio-box.svg
 

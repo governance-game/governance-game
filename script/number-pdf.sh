@@ -26,13 +26,21 @@ function card_front() {
 	NUM=$2
 	mkdir -pv num-front
 	cp -v $card num-front/${NUM}.pdf
+
+	mkdir -pv num-front-png
 	inkscape --export-type=png \
 		 --export-width=816 \
 		 --export-height=1110 \
 		 --export-dpi=300 \
-		 --export-filename=num-front/${NUM}.png \
+		 --export-filename=num-front-png/${NUM}.png \
 				   num-front/${NUM}.pdf
-	ls num-front/${NUM}.png
+	ls num-front-png/${NUM}.png
+
+	mkdir -pv num-front-vector
+	inkscape --export-text-to-path \
+		--export-filename=num-front-vector/${NUM}.vector.pdf \
+		num-front/${NUM}.pdf
+	ls num-front-vector/${NUM}.vector.pdf
 }
 
 function card_back() {
@@ -41,13 +49,15 @@ function card_back() {
 	export PREFIX=`echo $card | cut -f1 -d'-'`
 	mkdir -pv num-back
 	cp -v $PREFIX-back.pdf num-back/${NUM}.pdf
+
+	mkdir -pv num-back-png
 	inkscape --export-type=png \
 		 --export-width=816 \
 		 --export-height=1110 \
 		 --export-dpi=300 \
-		 --export-filename=num-back/${NUM}.png \
+		 --export-filename=num-back-png/${NUM}.png \
 			   num-back/${NUM}.pdf
-	ls num-back/${NUM}.png
+	ls num-back-png/${NUM}.png
 }
 
 export NUM=0;

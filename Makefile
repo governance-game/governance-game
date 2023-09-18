@@ -213,6 +213,7 @@ starting-%.pdf: cards/starting-%.tex templates/starting-template.tex
 #######################################################################
 # For printing, we export matching PDFs by number in the num-front/ and
 # the num-back/ directories
+# The script also creates png and vector files
 num-front/%.pdf: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 	script/number-pdf.sh $@ $^
 
@@ -221,7 +222,12 @@ num-back/%.pdf: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 
 .PHONY: number-pdfs
 number-pdfs: $(NUMBERED_PDFS)
-	ls num-front/* num-back/*
+	ls \
+		num-front/* \
+		num-front-vector/* \
+		num-front-png/* \
+		num-back/* \
+		num-back-png/*
 
 #######################################################################
 # release files (.tar, .zip, and box.pdf)
@@ -238,7 +244,12 @@ governance-game-$(VERSION).zip: governance-game-$(VERSION).tar.xz
 
 governance-game-numbered-$(VERSION).tar.xz: number-pdfs
 	tar --transform='s@\(.*\)@governance-game-numbered-$(VERSION)/\1@g' \
-		-cvJf $@ num-front num-back
+		-cvJf $@ \
+		num-front \
+		num-front-vector \
+		num-front-png \
+		num-back \
+		num-back-png
 
 governance-game-numbered-$(VERSION).zip: \
 		governance-game-numbered-$(VERSION).tar.xz
@@ -252,10 +263,14 @@ governance-game-box-$(VERSION).pdf: box/printers-studio-box-0.0.0.svg
 		printers-studio-box.svg
 	inkscape --export-filename=$@ printers-studio-box.svg
 
+governance-game-box-$(VERSION).vector.pdf: governance-game-box-$(VERSION).pdf
+	inkscape --export-text-to-path --export-filename=$@ $<
+
 .PHONY: release
 release: governance-game-$(VERSION).tar.xz \
 	governance-game-$(VERSION).zip \
 	governance-game-box-$(VERSION).pdf \
+	governance-game-box-$(VERSION).vector.pdf \
 	governance-game-numbered-$(VERSION).tar.xz \
 	governance-game-numbered-$(VERSION).zip
 	ls -l $^
@@ -355,4 +370,9 @@ view-all: view-all-fronts view-all-backs
 .PHONY: clean
 clean:
 	rm -rfv *.pdf *.aux *.log *.synctex.gz *.xz *.zip \
-		svg-inkscape num-front num-back
+		svg-inkscape \
+		num-front \
+		num-front-vector \
+		num-front-png \
+		num-back \
+		num-back-png
