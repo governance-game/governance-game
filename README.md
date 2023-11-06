@@ -45,6 +45,7 @@ Therefore, the [Foundation for Public Code](https://publiccode.net/) is committe
 ### Near term
 
 1. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
+1. Demonstrate a home printing process, [issue #63](https://github.com/publiccodenet/governance-game/issues/63)
 
 ### Longer term
 
