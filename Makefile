@@ -110,13 +110,17 @@ ACTOR_CARD_NAMES= \
  actor-support-vendor \
  actor-technical-steering-group
 
+# Note: the object cards are numbered 1-8,
+# the rules refer to cards 1-5, thus we should keep these
+# object card names in this non-alphabetical order so that
+# the cards are printed in the number-order.
 OBJECT_CARD_NAMES=\
- object-back-end \
- object-backlog \
  object-codebase \
- object-front-end \
  object-policy1 \
  object-policy2 \
+ object-back-end \
+ object-front-end \
+ object-backlog \
  object-documentation \
  object-standard-for-public-code
 
