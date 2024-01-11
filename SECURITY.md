@@ -1,7 +1,7 @@
 # Security
 
 <!-- SPDX-License-Identifier: CC0-1.0 -->
-<!-- SPDX-FileCopyrightText: 2023 The Foundation for Public Code <info@publiccode.net> -->
+<!-- SPDX-FileCopyrightText: 2023-2024 The Foundation for Public Code <info@publiccode.net> -->
 
 While the Governance game is primarily a card game, the way we build the artifacts include some scripts and for these we have adopted a simple security policy.
 

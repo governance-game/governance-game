@@ -1,7 +1,7 @@
 # Governance Game
 
 <!-- SPDX-License-Identifier: CC0-1.0 -->
-<!-- SPDX-FileCopyrightText: 2019-2023 The Foundation for Public Code <info@publiccode.net> -->
+<!-- SPDX-FileCopyrightText: 2019-2024 The Foundation for Public Code <info@publiccode.net> -->
 
 ![version 1.0.3](https://img.shields.io/badge/version-1.0.3-gree.svg)
 [![release-on-tag](https://github.com/publiccodenet/governance-game/actions/workflows/release-on-tag.yml/badge.svg)](https://github.com/publiccodenet/governance-game/actions/workflows/release-on-tag.yml)
