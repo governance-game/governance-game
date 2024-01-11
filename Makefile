@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC0-1.0
-# SPDX-FileCopyrightText: 2022-2023 The Foundation for Public Code <info@publiccode.net>
+# SPDX-FileCopyrightText: 2022-2024 The Foundation for Public Code <info@publiccode.net>
 
 # This 'Makefile' is written for use with the GNU `make` utility.
 # https://www.gnu.org/software/make
