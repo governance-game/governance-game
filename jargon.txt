@@ -6,6 +6,7 @@ th
 Aman
 analytics
 blanko
+centric
 changelog
 codebase
 codebases
