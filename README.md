@@ -44,12 +44,13 @@ Therefore, the [Foundation for Public Code](https://publiccode.net/) is committe
 
 ### Near term
 
-1. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
-1. Demonstrate a home printing process, [issue #63](https://github.com/publiccodenet/governance-game/issues/63)
+1. Change governance model to a more community centric model
+1. Allow for multiple target groups of the game, [discussion #147](https://github.com/publiccodenet/governance-game/discussions/147)
 
 ### Longer term
 
-1. Allow for multiple target groups of the game, [discussion #147](https://github.com/publiccodenet/governance-game/discussions/147)
+1. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
+1. Demonstrate a home printing process, [issue #63](https://github.com/publiccodenet/governance-game/issues/63)
 
 ## Versioning
 
