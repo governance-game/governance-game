@@ -8,7 +8,7 @@
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 [![Standard commitment](https://raw.githubusercontent.com/publiccodenet/standard/develop/assets/standard-for-public-code-commitment.svg)](#contributing)
 
-[![Introduction video to the game](images/video-preview.jpg)](https://www.youtube.com/watch?v=Dt0WFla4eeM)
+[![Introduction video to the game](images/video-preview.jpg)](https://aina.li/videos/GovernanceGame.mp4)
 
 This is a game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html).
 Use this as a way to get a conversation and reflection about governance started.
