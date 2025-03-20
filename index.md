@@ -4,7 +4,7 @@
 ---
 # Governance Game
 
-[![Introduction video to the game](images/video-preview.jpg)](https://www.youtube.com/watch?v=Dt0WFla4eeM)
+[![Introduction video to the game](images/video-preview.jpg)](https://aina.li/videos/GovernanceGame.mp4)
 
 This is a game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html).
 Use this as a way to get a conversation and reflection about governance started.
