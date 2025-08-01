@@ -78,7 +78,7 @@ The Makefile automatically generates a complete card deck for the Governance Gam
 
 ```
 sudo apt install docbook-utils pandoc inkscape texlive texlive-fonts-extra \
-	texlive-extra-utils qpdf aspell aspell-en
+	texlive-lang-greek texlive-extra-utils qpdf aspell aspell-en
 # sudo apt install texlive-full
 ```
 
