@@ -12,7 +12,8 @@ if [ "_${VERBOSE}_" != "__" ] && [ "${VERBOSE}" -gt 0 ]; then
 fi
 set -e
 
-NUM_EXPECTED=$( ls cards/*.tex assets/*back.svg | wc --words )
+NUM_EXPECTED=$( ls cards/*.tex assets/*back.svg \
+	| grep -v actor-foundation-for-public-code | wc --words )
 NUM_CARDS=$( ls *.pdf | grep -v governance-game-box | wc --words)
 if [ "$NUM_EXPECTED" -ne "$NUM_CARDS" ]; then
 	echo "expected $NUM_EXPECTED but was $NUM_CARDS"

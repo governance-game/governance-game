@@ -99,7 +99,7 @@ Type `make view-all` to view all of the PDF files generated.
 #### Generating alternative decks
 
 The `Makefile` supports setting an alternative set of files with the `DEC_ENV` variable.
-By default, it uses the [`deck.env`](deck-ffpc.env) that is included with the repository.
+By default, it uses the [`deck.env`](deck.env) that is included with the repository.
 
 A deck `.env` file is expected to define six variables:
 
@@ -112,6 +112,10 @@ A deck `.env` file is expected to define six variables:
 
 Each variable should be a list of card names located in the [`cards`](cards) directory.
 Note that the directory and the `.tex` extension are omitted.
+
+Sometimes blank cards may be useful, thus [cards/rules-blank-1.tex](cards/rules-blank-1.tex) is included in the default deck."
+
+Duplicate cards can be created by creating a symbolic link with a different name to an existing card, for example: [cards/actor-inhouse-developer-2.tex](cards/actor-inhouse-developer-2.tex).
 
 Type `make DECK_ENV=/path/to/my-deck.env` to generate a custom deck.
 
