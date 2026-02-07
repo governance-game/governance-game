@@ -38,8 +38,8 @@ function card_front() {
 
 	mkdir -pv num-front-vector
 	inkscape --export-text-to-path \
-		--export-filename=num-front-vector/${NUM}.vector.pdf \
-		num-front/${NUM}.pdf
+		 --export-filename=num-front-vector/${NUM}.vector.pdf \
+				   num-front/${NUM}.pdf
 	ls num-front-vector/${NUM}.vector.pdf
 }
 
@@ -56,7 +56,7 @@ function card_back() {
 		 --export-height=1110 \
 		 --export-dpi=300 \
 		 --export-filename=num-back-png/${NUM}.png \
-			   num-back/${NUM}.pdf
+				   num-back/${NUM}.pdf
 	ls num-back-png/${NUM}.png
 }
 
