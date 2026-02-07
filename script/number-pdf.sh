@@ -28,7 +28,8 @@ function card_front() {
 	cp -v $card num-front/${NUM}.pdf
 
 	mkdir -pv num-front-png
-	inkscape --export-type=png \
+	inkscape --pages=1 \
+		 --export-type=png \
 		 --export-width=816 \
 		 --export-height=1110 \
 		 --export-dpi=300 \
@@ -37,7 +38,8 @@ function card_front() {
 	ls num-front-png/${NUM}.png
 
 	mkdir -pv num-front-vector
-	inkscape --export-text-to-path \
+	inkscape --pages=1 \
+		 --export-text-to-path \
 		 --export-filename=num-front-vector/${NUM}.vector.pdf \
 				   num-front/${NUM}.pdf
 	ls num-front-vector/${NUM}.vector.pdf
@@ -51,7 +53,8 @@ function card_back() {
 	cp -v $PREFIX-back.pdf num-back/${NUM}.pdf
 
 	mkdir -pv num-back-png
-	inkscape --export-type=png \
+	inkscape --pages=1 \
+		 --export-type=png \
 		 --export-width=816 \
 		 --export-height=1110 \
 		 --export-dpi=300 \
