@@ -30,6 +30,7 @@ jobs:
           inkscape
           texlive
           texlive-fonts-extra
+          texlive-lang-greek
           texlive-extra-utils
           fontconfig
           qpdf

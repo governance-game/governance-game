@@ -75,80 +75,70 @@ PDFLATEX=pdflatex -synctex=1 -interaction=nonstopmode --shell-escape
 
 VERSION:=$(shell script/version.sh)
 
+DECK_ENV ?= deck.env
+
 # The first target is the default target for "make"
 # .PHONY: means that the result of the target will not be a file
 .PHONY: all
 all: pdfs
 
-CALAMITY_CARD_NAMES= \
- calamity-bug \
- calamity-concerns \
- calamity-gdpr-compliance \
- calamity-lost-funding \
- calamity-major-enhancement \
- calamity-new-replicator \
- calamity-wild-developer
+ifeq (,$(wildcard $(shell readlink -f "$(DECK_ENV)")))
+$(info '$(DECK_ENV)' file not found or symlink target does not exist)
+else
+$(info including $(DECK_ENV))
+include $(DECK_ENV)
+endif
 
-ACTOR_CARD_NAMES= \
- actor-association-of-public-organizations \
- actor-citizen \
- actor-civil-servant \
- actor-commissioning-public-organization \
- actor-commissioning-public-organization-2 \
- actor-development-vendor \
- actor-development-vendor-2 \
- actor-foundation-for-public-code \
- actor-governance-body \
- actor-hosting-vendor \
- actor-independent-developer \
- actor-inhouse-developer \
- actor-inhouse-developer-2 \
- actor-product-steering-group \
- actor-replicating-public-organization \
- actor-replicating-public-organization-2 \
- actor-stewardship-organization \
- actor-support-vendor \
- actor-technical-steering-group
+ifeq ($(CALAMITY_CARD_NAMES),)
+$(error CALAMITY_CARD_NAMES not specified)
+else
+export CALAMITY_CARD_NAMES
+endif
 
-# Note: the object cards are numbered 1-8,
-# the rules refer to cards 1-5, thus we should keep these
-# object card names in this non-alphabetical order so that
-# the cards are printed in the number-order.
-OBJECT_CARD_NAMES=\
- object-codebase \
- object-policy1 \
- object-policy2 \
- object-back-end \
- object-front-end \
- object-backlog \
- object-documentation \
- object-standard-for-public-code
+ifeq ($(ACTOR_CARD_NAMES),)
+$(error ACTOR_CARD_NAMES not specified)
+else
+export ACTOR_CARD_NAMES
+endif
 
-RULES_CARD_NAMES=\
- rules-introduction \
- rules-setup \
- rules-rules \
- rules-goal \
- rules-calamities \
- rules-credits \
- rules-about
+ifeq ($(OBJECT_CARD_NAMES),)
+$(error OBJECT_CARD_NAMES not specified)
+else
+export OBJECT_CARD_NAMES
+endif
 
-SCENARIO_CARD_NAMES=\
- scenario-festival-management \
- scenario-localization-plugin \
- scenario-public-transport \
- scenario-recycling-station \
- scenario-wifi \
- scenario-own-scenario
+ifeq ($(RULES_CARD_NAMES),)
+$(error RULES_CARD_NAMES not specified)
+else
+export RULES_CARD_NAMES
+endif
 
-STARTING_CARD_NAMES=\
- starting-state-1 \
- starting-state-2 \
- starting-state-3 \
- starting-state-4 \
- starting-state-5 \
- starting-state-6 \
- starting-state-7
+ifeq ($(SCENARIO_CARD_NAMES),)
+$(error SCENARIO_CARD_NAMES not specified)
+else
+export SCENARIO_CARD_NAMES
+endif
+
+ifeq ($(STARTING_CARD_NAMES),)
+$(error STARTING_CARD_NAMES not specified)
+else
+export STARTING_CARD_NAMES
+endif
+
+card-variables:
+	@echo -e "\nRULES_CARD_NAMES=\n\t$$RULES_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+	@echo -e "\nSCENARIO_CARD_NAMES=\n\t$$SCENARIO_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+	@echo -e "\nSTARTING_CARD_NAMES=\n\t$$STARTING_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+	@echo -e "\nCALAMITY_CARD_NAMES=\n\t$$CALAMITY_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+	@echo -e "\nACTOR_CARD_NAMES=\n\t$$ACTOR_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+	@echo -e "\nOBJECT_CARD_NAMES=\n\t$$OBJECT_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+
 
 ALL_CARD_NAMES=\
  $(RULES_CARD_NAMES) \

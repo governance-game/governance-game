@@ -78,7 +78,7 @@ The Makefile automatically generates a complete card deck for the Governance Gam
 
 ```
 sudo apt install docbook-utils pandoc inkscape texlive texlive-fonts-extra \
-	texlive-extra-utils qpdf aspell aspell-en
+	texlive-lang-greek texlive-extra-utils qpdf aspell aspell-en
 # sudo apt install texlive-full
 ```
 
@@ -95,6 +95,25 @@ Or `make ensure-font` to run [`script/ensure-font.sh`](script/ensure-font.sh).
 Type `make` to generate the PDF files.
 
 Type `make view-all` to view all of the PDF files generated.
+
+#### Generating alternative decks
+
+The `Makefile` supports setting an alternative set of files with the `DEC_ENV` variable.
+By default, it uses the [`deck.env`](deck-ffpc.env) that is included with the repository.
+
+A deck `.env` file is expected to define six variables:
+
+ * `CALAMITY_CARD_NAMES`
+ * `ACTOR_CARD_NAMES`
+ * `OBJECT_CARD_NAMES`
+ * `RULES_CARD_NAMES`
+ * `SCENARIO_CARD_NAMES`
+ * `STARTING_CARD_NAMES`
+
+Each variable should be a list of card names located in the [`cards`](cards) directory.
+Note that the directory and the `.tex` extension are omitted.
+
+Type `make DECK_ENV=/path/to/my-deck.env` to generate a custom deck.
 
 ## Website
 
