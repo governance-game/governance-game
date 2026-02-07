@@ -25,7 +25,7 @@
 \begin{document}
 \begin{figure}[H] % Stops the image to "float" to top left
 	\centering
-	\def\svgwidth{\columnwidth} % Normalizes the size of the SVG to the column width so that the size in the source doesn't matter
-	\scalebox{0.7}{\includesvg{\cardpicture}} % Smaller scalebox than the objects-template since some actor images are very "tall"
+	% \columnwidth Normalizes the size of the SVG to the column width so that the size in the source doesn't matter
+	\scalebox{0.7}{\includesvg[width=\columnwidth]{\cardpicture}} % Smaller scalebox than the objects-template since some actor images are very "tall"
 \end{figure}
 \end{document}
