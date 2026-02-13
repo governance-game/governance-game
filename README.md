@@ -1,7 +1,7 @@
 # Governance Game
 
 <!-- SPDX-License-Identifier: CC0-1.0 -->
-<!-- SPDX-FileCopyrightText: 2019-2023 The Foundation for Public Code <info@publiccode.net> -->
+<!-- SPDX-FileCopyrightText: 2019-2024 The Foundation for Public Code <info@publiccode.net> -->
 
 ![version 1.0.3](https://img.shields.io/badge/version-1.0.3-gree.svg)
 [![release-on-tag](https://github.com/publiccodenet/governance-game/actions/workflows/release-on-tag.yml/badge.svg)](https://github.com/publiccodenet/governance-game/actions/workflows/release-on-tag.yml)
@@ -10,7 +10,7 @@
 
 ![Governance Game logo](images/governance-game-logo.svg)
 
-[![Introduction video to the game](images/video-preview.jpg)](https://www.youtube.com/watch?v=Dt0WFla4eeM)
+[![Introduction video to the game](images/video-preview.jpg)](https://aina.li/videos/GovernanceGame.mp4)
 
 This is a game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html).
 Use this as a way to get a conversation and reflection about governance started.
@@ -46,11 +46,13 @@ Therefore, the [Foundation for Public Code](https://publiccode.net/) is committe
 
 ### Near term
 
-1. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
+1. Change governance model to a more community centric model
+1. Allow for multiple target groups of the game, [discussion #147](https://github.com/publiccodenet/governance-game/discussions/147)
 
 ### Longer term
 
-1. Allow for multiple target groups of the game, [discussion #147](https://github.com/publiccodenet/governance-game/discussions/147)
+1. Create custom icons/imagery, [issue #3](https://github.com/publiccodenet/governance-game/issues/3)
+1. Demonstrate a home printing process, [issue #63](https://github.com/publiccodenet/governance-game/issues/63)
 
 ## Versioning
 
@@ -78,7 +80,7 @@ The Makefile automatically generates a complete card deck for the Governance Gam
 
 ```
 sudo apt install docbook-utils pandoc inkscape texlive texlive-fonts-extra \
-	texlive-extra-utils qpdf aspell aspell-en
+	texlive-lang-greek texlive-extra-utils qpdf aspell aspell-en
 # sudo apt install texlive-full
 ```
 
@@ -95,6 +97,29 @@ Or `make ensure-font` to run [`script/ensure-font.sh`](script/ensure-font.sh).
 Type `make` to generate the PDF files.
 
 Type `make view-all` to view all of the PDF files generated.
+
+#### Generating alternative decks
+
+The `Makefile` supports setting an alternative set of files with the `DEC_ENV` variable.
+By default, it uses the [`deck.env`](deck.env) that is included with the repository.
+
+A deck `.env` file is expected to define six variables:
+
+ * `CALAMITY_CARD_NAMES`
+ * `ACTOR_CARD_NAMES`
+ * `OBJECT_CARD_NAMES`
+ * `RULES_CARD_NAMES`
+ * `SCENARIO_CARD_NAMES`
+ * `STARTING_CARD_NAMES`
+
+Each variable should be a list of card names located in the [`cards`](cards) directory.
+Note that the directory and the `.tex` extension are omitted.
+
+Sometimes blank cards may be useful, thus [cards/rules-blank-1.tex](cards/rules-blank-1.tex) is included in the default deck."
+
+Duplicate cards can be created by creating a symbolic link with a different name to an existing card, for example: [cards/actor-inhouse-developer-2.tex](cards/actor-inhouse-developer-2.tex).
+
+Type `make DECK_ENV=/path/to/my-deck.env` to generate a custom deck.
 
 ## Website
 

@@ -1,5 +1,5 @@
 % SPDX-License-Identifier: CC0-1.0
-% SPDX-FileCopyrightText: 2022-2023 The Foundation for Public Code <info@publiccode.net>
+% SPDX-FileCopyrightText: 2022-2024 The Foundation for Public Code <info@publiccode.net>
 
 \documentclass{article}
 \usepackage[paperheight=9.4cm,
@@ -34,8 +34,8 @@
 \vspace{-3ex} % Removes some whitespace
 \begin{figure}[H]
 	\centering
-	\def\svgwidth{\columnwidth} % Normalizes the size of the SVG to the column width so that the size in the source doesn't matter
-	\scalebox{0.3}{\includesvg{\cardpicture}} % Scales the image to a size that makes plenty of room for the cardtext
+	% \columnwidth Normalizes the size of the SVG to the column width so that the size in the source doesn't matter
+	\scalebox{0.3}{\includesvg[width=\columnwidth]{\cardpicture}} % Scales the image to a size that makes plenty of room for the cardtext
 \end{figure}
 \centerline{\textbf{\cardname}}
 \section*{} % the '*' removes section numbers

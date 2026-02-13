@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC0-1.0
-# SPDX-FileCopyrightText: 2022-2023 The Foundation for Public Code <info@publiccode.net>
+# SPDX-FileCopyrightText: 2022-2024 The Foundation for Public Code <info@publiccode.net>
 
 # This 'Makefile' is written for use with the GNU `make` utility.
 # https://www.gnu.org/software/make
@@ -75,76 +75,70 @@ PDFLATEX=pdflatex -synctex=1 -interaction=nonstopmode --shell-escape
 
 VERSION:=$(shell script/version.sh)
 
+DECK_ENV ?= deck.env
+
 # The first target is the default target for "make"
 # .PHONY: means that the result of the target will not be a file
 .PHONY: all
 all: pdfs
 
-CALAMITY_CARD_NAMES= \
- calamity-bug \
- calamity-concerns \
- calamity-gdpr-compliance \
- calamity-lost-funding \
- calamity-major-enhancement \
- calamity-new-replicator \
- calamity-wild-developer
+ifeq (,$(wildcard $(shell readlink -f "$(DECK_ENV)")))
+$(info '$(DECK_ENV)' file not found or symlink target does not exist)
+else
+$(info including $(DECK_ENV))
+include $(DECK_ENV)
+endif
 
-ACTOR_CARD_NAMES= \
- actor-association-of-public-organizations \
- actor-citizen \
- actor-civil-servant \
- actor-commissioning-public-organization \
- actor-commissioning-public-organization-2 \
- actor-development-vendor \
- actor-development-vendor-2 \
- actor-foundation-for-public-code \
- actor-governance-body \
- actor-hosting-vendor \
- actor-independent-developer \
- actor-inhouse-developer \
- actor-inhouse-developer-2 \
- actor-product-steering-group \
- actor-replicating-public-organization \
- actor-replicating-public-organization-2 \
- actor-stewardship-organization \
- actor-support-vendor \
- actor-technical-steering-group
+ifeq ($(CALAMITY_CARD_NAMES),)
+$(error CALAMITY_CARD_NAMES not specified)
+else
+export CALAMITY_CARD_NAMES
+endif
 
-OBJECT_CARD_NAMES=\
- object-back-end \
- object-backlog \
- object-codebase \
- object-front-end \
- object-policy1 \
- object-policy2 \
- object-documentation \
- object-standard-for-public-code
+ifeq ($(ACTOR_CARD_NAMES),)
+$(error ACTOR_CARD_NAMES not specified)
+else
+export ACTOR_CARD_NAMES
+endif
 
-RULES_CARD_NAMES=\
- rules-introduction \
- rules-setup \
- rules-rules \
- rules-goal \
- rules-calamities \
- rules-credits \
- rules-about
+ifeq ($(OBJECT_CARD_NAMES),)
+$(error OBJECT_CARD_NAMES not specified)
+else
+export OBJECT_CARD_NAMES
+endif
 
-SCENARIO_CARD_NAMES=\
- scenario-festival-management \
- scenario-localization-plugin \
- scenario-public-transport \
- scenario-recycling-station \
- scenario-wifi \
- scenario-own-scenario
+ifeq ($(RULES_CARD_NAMES),)
+$(error RULES_CARD_NAMES not specified)
+else
+export RULES_CARD_NAMES
+endif
 
-STARTING_CARD_NAMES=\
- starting-state-1 \
- starting-state-2 \
- starting-state-3 \
- starting-state-4 \
- starting-state-5 \
- starting-state-6 \
- starting-state-7
+ifeq ($(SCENARIO_CARD_NAMES),)
+$(error SCENARIO_CARD_NAMES not specified)
+else
+export SCENARIO_CARD_NAMES
+endif
+
+ifeq ($(STARTING_CARD_NAMES),)
+$(error STARTING_CARD_NAMES not specified)
+else
+export STARTING_CARD_NAMES
+endif
+
+card-variables:
+	@echo -e "\nRULES_CARD_NAMES=\n\t$$RULES_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+	@echo -e "\nSCENARIO_CARD_NAMES=\n\t$$SCENARIO_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+	@echo -e "\nSTARTING_CARD_NAMES=\n\t$$STARTING_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+	@echo -e "\nCALAMITY_CARD_NAMES=\n\t$$CALAMITY_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+	@echo -e "\nACTOR_CARD_NAMES=\n\t$$ACTOR_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+	@echo -e "\nOBJECT_CARD_NAMES=\n\t$$OBJECT_CARD_NAMES" \
+		| sed 's/ /\n\t/g'
+
 
 ALL_CARD_NAMES=\
  $(RULES_CARD_NAMES) \
@@ -213,6 +207,7 @@ starting-%.pdf: cards/starting-%.tex templates/starting-template.tex
 #######################################################################
 # For printing, we export matching PDFs by number in the num-front/ and
 # the num-back/ directories
+# The script also creates png and vector files
 num-front/%.pdf: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 	script/number-pdf.sh $@ $^
 
@@ -221,7 +216,12 @@ num-back/%.pdf: $(patsubst %, %.pdf, $(ALL_CARD_NAMES) $(CARD_BACKS))
 
 .PHONY: number-pdfs
 number-pdfs: $(NUMBERED_PDFS)
-	ls num-front/* num-back/*
+	ls \
+		num-front/* \
+		num-front-vector/* \
+		num-front-png/* \
+		num-back/* \
+		num-back-png/*
 
 #######################################################################
 # release files (.tar, .zip, and box.pdf)
@@ -238,7 +238,12 @@ governance-game-$(VERSION).zip: governance-game-$(VERSION).tar.xz
 
 governance-game-numbered-$(VERSION).tar.xz: number-pdfs
 	tar --transform='s@\(.*\)@governance-game-numbered-$(VERSION)/\1@g' \
-		-cvJf $@ num-front num-back
+		-cvJf $@ \
+		num-front \
+		num-front-vector \
+		num-front-png \
+		num-back \
+		num-back-png
 
 governance-game-numbered-$(VERSION).zip: \
 		governance-game-numbered-$(VERSION).tar.xz
@@ -252,10 +257,14 @@ governance-game-box-$(VERSION).pdf: box/printers-studio-box-0.0.0.svg
 		printers-studio-box.svg
 	inkscape --export-filename=$@ printers-studio-box.svg
 
+governance-game-box-$(VERSION).vector.pdf: governance-game-box-$(VERSION).pdf
+	inkscape --export-text-to-path --export-filename=$@ $<
+
 .PHONY: release
 release: governance-game-$(VERSION).tar.xz \
 	governance-game-$(VERSION).zip \
 	governance-game-box-$(VERSION).pdf \
+	governance-game-box-$(VERSION).vector.pdf \
 	governance-game-numbered-$(VERSION).tar.xz \
 	governance-game-numbered-$(VERSION).zip
 	ls -l $^
@@ -355,4 +364,9 @@ view-all: view-all-fronts view-all-backs
 .PHONY: clean
 clean:
 	rm -rfv *.pdf *.aux *.log *.synctex.gz *.xz *.zip \
-		svg-inkscape num-front num-back
+		svg-inkscape \
+		num-front \
+		num-front-vector \
+		num-front-png \
+		num-back \
+		num-back-png

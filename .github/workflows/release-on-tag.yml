@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC0-1.0
-# SPDX-FileCopyrightText: 2021-2022 The Foundation for Public Code <info@publiccode.net>, https://standard.publiccode.net/AUTHORS
+# SPDX-FileCopyrightText: 2021-2024 The Foundation for Public Code <info@publiccode.net>, https://standard.publiccode.net/AUTHORS
 
 name: release-on-tag
 on:
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: update-deps
         run: sudo apt-get update
       - name: upgrade-deps
@@ -31,6 +31,7 @@ jobs:
           inkscape
           texlive
           texlive-fonts-extra
+          texlive-lang-greek
           texlive-extra-utils
           fontconfig
           qpdf

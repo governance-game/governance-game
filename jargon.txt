@@ -6,6 +6,7 @@ th
 Aman
 analytics
 blanko
+centric
 changelog
 codebase
 codebases
@@ -17,6 +18,7 @@ GitFlow
 GitHub
 Grégory
 Inhouse
+inhouse
 Makefile
 md
 Montigny
