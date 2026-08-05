@@ -10,3 +10,4 @@
 * Eric Herman, formerly The Foundation for Public Code (@ericherman)
 * Claus Mullie, formerly The Foundation for Public Code (@clausmullie)
 * Boris van Hoytema, formerly The Foundation for Public Code (@bvhme)
+* Steve Clement (@SteveClement)
