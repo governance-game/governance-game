@@ -4,14 +4,14 @@
 ---
 # Governance
 
-This Governance game is a tool originally created and maintained by [Foundation for Public Code](https://publiccode.net/) staff.
+This Governance Game is a tool originally created and maintained by [Foundation for Public Code](https://publiccode.net/) staff.
 
-The Governance game is currently maintained by a volunteer community.
+The Governance Game is currently maintained by a volunteer community.
 
 [We welcome contributions, such as suggestions for changes or general feedback, from anyone.](/CONTRIBUTING.md)
 
 Because of the work that has gone into creating the Governance game we strive for the highest standards from the Governance game.
 
 We will try to respond promptly to all pull requests.
-The pull request is an opportunity to work together to improve our methods and the Governance game.
+The pull request is an opportunity to work together to improve our methods and the Governance Game.
 We may not accept all changes, but we will explain our logic.
