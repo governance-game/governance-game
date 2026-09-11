@@ -30,4 +30,4 @@ The three options on the product page are for the quality of the paper, how many
 
 ### Box
 
-The PDF for the box can be found in the [latest release assets](https://github.com/publiccodenet/governance-game/releases/latest).
+The PDF for the box can be found in the [latest release assets](https://github.com/governance-game/governance-game/releases/latest).
