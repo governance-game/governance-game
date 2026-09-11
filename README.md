@@ -12,7 +12,7 @@
 
 This is a game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html).
 Use this as a way to get a conversation and reflection about governance started.
-While originally developed for public code it is probably useful for any constellation that have a codebase to govern.
+While originally developed for public code it is probably useful for any constellation with a codebase to govern.
 
 ## Playing the game
 
