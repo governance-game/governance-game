@@ -12,8 +12,7 @@
 
 This is a game on governance of [Public Code](https://about.publiccode.net/glossary/public-code-definition.html).
 Use this as a way to get a conversation and reflection about governance started.
-We aim to use it during [early incubation of a codebase](https://about.publiccode.net/activities/codebase-stewardship/product-assets-for-early-incubation.html), or perhaps even earlier.
-You can of course play the game totally without our involvement, it is probably useful for any constellation that have a codebase to govern.
+While originally developed for public code it is probably useful for any constellation that have a codebase to govern.
 
 ## Playing the game
 
@@ -23,7 +22,7 @@ For the actual rules, see the rules cards.
 
 ![A picture of the cards in the game on a table](images/cards-640px.jpg)
 
-If you want to use the game in a workshop or online, see [our workshop guide](https://about.publiccode.net/activities/supporting-codebase-governance/game/run-governance-game-workshop.html).
+If you want to use the game in a workshop or online, see [this sample workshop guide](https://about.publiccode.net/activities/supporting-codebase-governance/game/run-governance-game-workshop.html).
 
 ## Print your own version
 
@@ -38,7 +37,7 @@ We want this to be an inclusive and welcoming community.
 
 It is the intent of the Governance Game development community to develop the game collaboratively.
 Adhering to the criteria set forth in the [Standard for Public Code](https://standard.publiccode.net/) gives us confidence in the process.
-Therefore, the [Foundation for Public Code](https://publiccode.net/) is committed to maintaining and developing the Governance Game at a level of quality that meets the Standard for Public Code.
+Therefore, this community is committed to maintaining and developing the Governance Game at a level of quality that meets the Standard for Public Code.
 
 ## Roadmap
 

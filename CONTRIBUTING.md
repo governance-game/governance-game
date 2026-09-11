@@ -6,7 +6,7 @@
 🙇‍♀️ Thank you for contributing!
 
 We love issues and pull requests from everyone.
-If you're not comfortable with GitHub, you can email use your feedback at <info@publiccode.net>.
+If you're not comfortable with GitHub issues, you can give your feedback in [the discussions](https://github.com/governance-game/governance-game/discussions).
 
 ## Problems, suggestions and questions in issues
 

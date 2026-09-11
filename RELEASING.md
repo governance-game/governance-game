@@ -31,7 +31,7 @@
         - This should generate the release, with changelog bullets
 5. Update 'develop' with a merge from 'main'
 6. Rebuild the GitHub Pages
-    - [ ] Navigate to the [GitHub action](https://github.com/publiccodenet/governance-game/actions/workflows/pages/pages-build-deployment)
+    - [ ] Navigate to the [GitHub action](https://github.com/governance-game/governance-game/actions/workflows/pages/pages-build-deployment)
         - Select the latest run
         - Click "Re-run all jobs"
 7. [Send the files for print to the printer](PRINTING.md)
