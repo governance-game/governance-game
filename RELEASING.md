@@ -1,5 +1,5 @@
 <!-- SPDX-License-Identifier: CC0-1.0 -->
-<!-- written in 2022 by The Foundation for Public Code <info@publiccode.net> -->
+<!-- written 2025-2026 Governance game AUTHORS.md, 2022-2024 The Foundation for Public Code <info@publiccode.net> -->
 # Releasing a new version of the Governance Game
 
 1. Review state of the 'develop' branch
