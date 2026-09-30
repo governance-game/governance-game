@@ -12,4 +12,7 @@ Be considerate, respectful, and patient.
 
 Strive to be as constructive as possible.
 
-To raise a concern, please email directors@publiccode.net.
+To raise a concern, please email one or more of the maintainers:
+
+* Jan Ainali jan[at]aina.li
+* Eric Herman eric.herman[at]freesa.org
