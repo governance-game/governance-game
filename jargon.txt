@@ -1,4 +1,6 @@
 personal_ws-1.1 en 30 utf-8
+aina
+Ainali
 Aman
 analytics
 blanko
@@ -15,6 +17,8 @@ GitHub
 Grégory
 Inhouse
 inhouse
+jan
+li
 Makefile
 md
 Montigny
