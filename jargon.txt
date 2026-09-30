@@ -1,8 +1,6 @@
 personal_ws-1.1 en 30 utf-8
-st
-nd
-rd
-th
+aina
+Ainali
 Aman
 analytics
 blanko
@@ -19,18 +17,24 @@ GitHub
 Grégory
 Inhouse
 inhouse
+jan
+li
 Makefile
 md
 Montigny
 mynamepong
+nd
 personalisieren
 PNG
 programmatically
+rd
 roadmap
 scalable
 Shastry
 Somewan
 SPDX
 spielkarten
+st
 svg
 tex
+th

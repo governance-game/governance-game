@@ -7,7 +7,10 @@ While the Governance game is primarily a card game, the way we build the artifac
 
 ## Reporting security issues
 
-If you discover security issues in the scripts for the Governance game, we request you to disclose these responsibly by sending an email to security@publiccode.net.
+If you discover security issues in the scripts for the Governance game, we request you to disclose these responsibly by sending an email to the maintainers:
+
+* Jan Ainali jan[at]aina.li
+* Eric Herman eric.herman[at]freesa.org
 
 If possible, please provide a reproducible test or clear steps on how to reproduce the vulnerability, this will help address the issue quicker.
 
