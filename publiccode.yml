@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC0-1.0
-# SPDX-FileCopyrightText: 2023-2024 The Foundation for Public Code <info@publiccode.net>
+# SPDX-FileCopyrightText: 2025-2026 Governance game AUTHORS.md, 2023-2024 The Foundation for Public Code <info@publiccode.net>
 
 # This repository adheres to the publiccode.yml standard by including this
 # metadata file that makes public software easily discoverable.
@@ -16,13 +16,9 @@ description:
     genericName: Simulation
     longDescription: |
       This is a game on governance of [Public
-      Code](https://about.publiccode.net/glossary/public-code-definition.html).
+      Code](https://www.standardforpubliccode.org/glossary.html#public-code).
       Use this as a way to get a conversation and reflection about governance
-      started. We aim to use it during [early incubation of a
-      codebase](https://about.publiccode.net/activities/codebase-stewardship/product-assets-for-early-incubation.html),
-      or perhaps even earlier. You can of course play the game totally without
-      our involvement, it is probably useful for any constellation that have a
-      codebase to govern.
+      started.
 
 
       ## **Playing the game**
@@ -37,10 +33,10 @@ description:
     videos:
       - 'https://www.youtube.com/watch?v=Dt0WFla4eeM'
 developmentStatus: stable
-landingURL: 'https://governancegame.publiccode.net/'
+landingURL: 'https://github.com/governance-game/governance-game/'
 legal:
   authorsFile: |-
-    https://raw.githubusercontent.com/publiccodenet/governance-game/main/AUTHORS.md
+    https://raw.githubusercontent.com/governance-game/governance-game/main/AUTHORS.md
   license: CC0-1.0
   mainCopyrightOwner: Foundation for Public Code
   repoOwner: Foundation for Public Code
@@ -50,19 +46,18 @@ localisation:
   localisationReady: false
 maintenance:
   contacts:
-    - affiliation: Foundation for Public Code
-      email: jan@publiccode.net
+    - affiliation: Governance game
+      email: jan@aina.li
       name: Jan Ainali
-      phone: '+31202444500'
-    - affiliation: Foundation for Public Code
-      email: eric@publiccode.net
+    - affiliation: Governance game
+      email: eric@freesa.org
       name: Eric Herman
   type: internal
 name: Governance game
 platforms:
   - card game
 releaseDate: '2023-01-30'
-roadmap: 'https://github.com/publiccodenet/governance-game#roadmap'
+roadmap: 'https://github.com/governance-game/governance-game#roadmap'
 softwareType: standalone/other
 softwareVersion: 1.0.1
-url: 'https://github.com/publiccodenet/governance-game'
+url: 'https://github.com/governance-game/governance-game'
