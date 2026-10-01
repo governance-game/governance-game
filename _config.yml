@@ -1,14 +1,17 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: 2023 The Foundation for Public Code <info@publiccode.net>
 
-title: The Governance Game
+title: Governance Game
 version: 1.0.2
 
-remote_theme: publiccodenet/jekyll-theme
+remote_theme: governance-game/jekyll-theme
 include:
   - "index.md"
   - "CHANGELOG.md"
 
 toc: false
+
+hide_foundation_footer: true
+hide_foundation_footer_logo: true
 
 # baseurl: /
